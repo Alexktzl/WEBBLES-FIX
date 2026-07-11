@@ -1,0 +1,11 @@
+{
+  "description": "ESLint prefer-const: pi is never reassigned",
+  "language": "javascript",
+  "category": "WARNING",
+  "primary_error": {
+    "code": "prefer-const", "file": "main.js", "line": 1,
+    "error_class": "WARNING",
+    "message": "'pi' is never reassigned. Use 'const' instead"
+  },
+  "acceptable_fixes": ["replace let with const"]
+}

@@ -1,0 +1,5 @@
+{ "description": "no-unsafe-negation: !key in obj negates wrong operand",
+  "language": "javascript", "category": "BLOCKING",
+  "primary_error": {"code": "no-unsafe-negation", "file": "main.js", "line": 2,
+    "error_class": "STRUCTURAL", "message": "Unexpected negating the left operand of 'in' operator"},
+  "acceptable_fixes": ["wrap the in expression in parentheses"] }

@@ -1,0 +1,8 @@
+{
+  "description": "unused_mut: x declared mut but never mutated",
+  "language": "rust", "category": "CLEANUP",
+  "primary_error": {"code": "unused_mut", "file": "src/main.rs", "line": 2,
+    "error_class": "CLEANUP",
+    "message": "variable does not need to be mutable"},
+  "acceptable_fixes": ["remove the mut keyword"]
+}

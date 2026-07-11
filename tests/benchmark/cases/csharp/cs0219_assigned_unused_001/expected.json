@@ -1,0 +1,12 @@
+{
+  "description": "Assigned but never read",
+  "language": "csharp",
+  "category": "WARNING",
+  "primary_error": {
+    "code": "CS0219",
+    "file": "Program.cs",
+    "line": 3,
+    "error_class": "WARNING",
+    "message": "The variable 'x' is assigned but its value is never used"
+  }
+}

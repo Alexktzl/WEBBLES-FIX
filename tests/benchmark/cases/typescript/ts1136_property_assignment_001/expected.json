@@ -1,0 +1,12 @@
+{
+  "description": "Missing colon in object literal",
+  "language": "typescript",
+  "category": "CRITICAL_SYNTAX",
+  "primary_error": {
+    "code": "TS1136",
+    "file": "main.ts",
+    "line": 1,
+    "error_class": "CRITICAL_SYNTAX",
+    "message": "Property assignment expected."
+  }
+}

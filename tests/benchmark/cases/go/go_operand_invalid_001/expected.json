@@ -1,0 +1,12 @@
+{
+  "description": "Invalid - operation on string",
+  "language": "go",
+  "category": "BLOCKING",
+  "primary_error": {
+    "code": "GO_OPERAND",
+    "file": "main.go",
+    "line": 3,
+    "error_class": "BLOCKING",
+    "message": "invalid operation: \"a\" - 1 (mismatched types string and untyped int)"
+  }
+}

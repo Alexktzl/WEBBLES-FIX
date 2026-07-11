@@ -1,0 +1,5 @@
+{ "description": "E501: line too long (>79 chars)",
+  "language": "python", "category": "WARNING",
+  "primary_error": {"code": "E501", "file": "main.py", "line": 2,
+    "error_class": "WARNING", "message": "line too long (90 > 79 characters)"},
+  "acceptable_fixes": ["wrap the long string across lines"] }

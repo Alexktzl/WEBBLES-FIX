@@ -1,0 +1,11 @@
+{
+  "description": "ESLint no-var: prefer let/const over var",
+  "language": "javascript",
+  "category": "WARNING",
+  "primary_error": {
+    "code": "no-var", "file": "main.js", "line": 1,
+    "error_class": "WARNING",
+    "message": "Unexpected var, use let or const instead"
+  },
+  "acceptable_fixes": ["replace var with let (counter is reassigned)"]
+}

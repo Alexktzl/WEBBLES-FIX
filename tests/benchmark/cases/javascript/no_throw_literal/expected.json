@@ -1,0 +1,5 @@
+{ "description": "no-throw-literal: throwing a string literal",
+  "language": "javascript", "category": "WARNING",
+  "primary_error": {"code": "no-throw-literal", "file": "main.js", "line": 3,
+    "error_class": "WARNING", "message": "Expected an error object to be thrown"},
+  "acceptable_fixes": ["throw new Error(...)"] }

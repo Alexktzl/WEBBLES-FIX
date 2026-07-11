@@ -1,0 +1,7 @@
+{
+  "description": "no-dupe-keys: duplicate key host in object literal",
+  "language": "javascript", "category": "WARNING",
+  "primary_error": {"code": "no-dupe-keys", "file": "main.js", "line": 4,
+    "error_class": "WARNING", "message": "Duplicate key 'host'"},
+  "acceptable_fixes": ["remove the duplicate key"]
+}

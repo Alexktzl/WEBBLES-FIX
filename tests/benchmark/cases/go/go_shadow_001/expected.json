@@ -1,0 +1,12 @@
+{
+  "description": "Shadowed outer variable",
+  "language": "go",
+  "category": "WARNING",
+  "primary_error": {
+    "code": "GO_SHADOW",
+    "file": "main.go",
+    "line": 5,
+    "error_class": "WARNING",
+    "message": "declaration of \"x\" shadows declaration at line 3"
+  }
+}

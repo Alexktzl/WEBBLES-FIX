@@ -1,0 +1,12 @@
+{
+  "description": "Mixed array needs union type",
+  "language": "typescript",
+  "category": "BLOCKING",
+  "primary_error": {
+    "code": "TS2322",
+    "file": "main.ts",
+    "line": 1,
+    "error_class": "BLOCKING",
+    "message": "Type 'string' is not assignable to type 'number'."
+  }
+}

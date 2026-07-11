@@ -1,0 +1,5 @@
+{ "description": "E0252: Result imported twice from different modules",
+  "language": "rust", "category": "BLOCKING",
+  "primary_error": {"code": "E0252", "file": "src/main.rs", "line": 2,
+    "error_class": "STRUCTURAL", "message": "the name `Result` is defined multiple times"},
+  "acceptable_fixes": ["alias one import with as"] }

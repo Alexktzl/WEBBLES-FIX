@@ -1,0 +1,9 @@
+{
+  "description": "E0433: failed to resolve, use of undeclared crate chrono",
+  "language": "rust", "category": "BLOCKING",
+  "primary_error": {"code": "E0433", "file": "src/main.rs", "line": 2,
+    "error_class": "BUILD_SCRIPT",
+    "message": "failed to resolve: use of undeclared crate or module `chrono`"},
+  "acceptable_fixes": ["add chrono to Cargo.toml", "use std::time"],
+  "constraints_test": {"expected_dont_contains": "invent a new module"}
+}

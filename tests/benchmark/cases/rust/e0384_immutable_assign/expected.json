@@ -1,0 +1,8 @@
+{
+  "description": "E0384: cannot assign twice to immutable variable x",
+  "language": "rust", "category": "BLOCKING",
+  "primary_error": {"code": "E0384", "file": "src/main.rs", "line": 3,
+    "error_class": "STRUCTURAL",
+    "message": "cannot assign twice to immutable variable `x`"},
+  "acceptable_fixes": ["add mut to the let binding"]
+}

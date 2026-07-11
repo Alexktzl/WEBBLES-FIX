@@ -1,0 +1,25 @@
+[
+  {
+    "file": "toggl2notion\\notion_helper.py",
+    "line": 3,
+    "code": "import-not-found",
+    "message": "Cannot find implementation or library stub for module named \"notionhub.client\"",
+    "verdict": "STILL_FLAGGED",
+    "before_snippet": [
+      "import os",
+      "",
+      "from notionhub.client import NotionHelperBase, TARGET_ICON_URL, TAG_ICON_URL, USER_ICON_URL, BOOKMARK_ICON_URL",
+      "from notionhub.utils import get_icon, get_property_value, get_relation, get_title, get_date, format_date",
+      "from notionhub.log import log",
+      ""
+    ],
+    "after_snippet": [
+      "import os",
+      "",
+      "from notionhub.client import (  # type: ignore[import-not-found]",
+      "    TARGET_ICON_URL,",
+      "    NotionHelperBase,",
+      ")"
+    ]
+  }
+]

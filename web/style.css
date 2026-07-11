@@ -1,0 +1,200 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+body{
+  font-family:Inter;
+  background:#050510;
+  color:white;
+  overflow:hidden;
+}
+
+/* фон sci-fi */
+body::before{
+  content:"";
+  position:fixed;
+  inset:0;
+  background:
+    radial-gradient(circle at top,#7c3aed55,transparent 40%),
+    radial-gradient(circle at bottom,#00ffcc22,transparent 50%);
+  z-index:-2;
+}
+
+.app{
+  height:100vh;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+}
+
+/* экраны */
+.screen{
+  width:90%;
+  max-width:1200px;
+  padding:50px;
+  border-radius:25px;
+  background:rgba(20,20,40,0.7);
+  backdrop-filter:blur(20px);
+  display:none;
+  animation:fade .3s ease;
+}
+
+.screen.active{
+  display:block;
+}
+
+@keyframes fade{
+  from{opacity:0; transform:translateY(10px);}
+  to{opacity:1; transform:translateY(0);}
+}
+
+.logo{
+  width:80px;
+  height:80px;
+  margin:auto;
+  border-radius:20px;
+  background:linear-gradient(135deg,#7c3aed,#00ffcc);
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  font-size:32px;
+  font-weight:bold;
+  box-shadow:0 0 40px #7c3aed55;
+}
+
+h1,h2{
+  text-align:center;
+  margin-top:20px;
+}
+
+.subtitle{
+  text-align:center;
+  color:#bbb;
+}
+
+.desc{
+  text-align:center;
+  margin-top:20px;
+  color:#888;
+}
+
+/* кнопки */
+.btn{
+  margin-top:30px;
+  width:100%;
+  padding:15px;
+  border:none;
+  border-radius:15px;
+  background:linear-gradient(135deg,#7c3aed,#9f67ff);
+  color:white;
+  font-weight:600;
+  cursor:pointer;
+  transition:.2s;
+}
+
+.btn:hover{
+  transform:scale(1.02);
+}
+
+.secondary{
+  background:#2a2a40;
+}
+
+/* upload */
+.upload{
+  margin-top:40px;
+  height:200px;
+  border:2px dashed #7c3aed55;
+  border-radius:20px;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+  cursor:pointer;
+  transition:.2s;
+}
+
+.upload:hover{
+  border-color:#7c3aed;
+}
+
+/* langs */
+.langs{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:15px;
+  margin-top:30px;
+}
+
+.lang{
+  padding:20px;
+  border-radius:15px;
+  background:#1b1b2f;
+  text-align:center;
+  cursor:pointer;
+}
+
+.lang.active{
+  border:1px solid #7c3aed;
+  box-shadow:0 0 20px #7c3aed55;
+}
+
+/* screen 4 */
+.status{
+  margin-top:20px;
+  text-align:center;
+  color:#00ffcc;
+  animation:pulse 1s infinite;
+}
+
+@keyframes pulse{
+  0%{opacity:0.4;}
+  50%{opacity:1;}
+  100%{opacity:0.4;}
+}
+
+.layout{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:20px;
+  margin-top:30px;
+}
+
+.panel{
+  background:#0f0f20;
+  border-radius:20px;
+  padding:20px;
+  border:1px solid #2a2a40;
+}
+
+pre{
+  color:#ccc;
+  white-space:pre-wrap;
+}
+
+/* 💥 подсветка исправлений */
+.fixed pre{
+  color:#00ff99;
+  text-shadow:0 0 10px #00ff9955;
+}
+
+/* sci-fi линия генерации */
+.glow-line{
+  margin-top:30px;
+  height:2px;
+  background:linear-gradient(90deg,transparent,#7c3aed,transparent);
+  animation:scan 2s linear infinite;
+}
+
+@keyframes scan{
+  0%{transform:translateX(-100%);}
+  100%{transform:translateX(100%);}
+}
+
+.row{
+  display:flex;
+  gap:15px;
+  margin-top:20px;
+}

@@ -1,0 +1,12 @@
+{
+  "description": "Unused local variable",
+  "language": "cpp",
+  "category": "WARNING",
+  "primary_error": {
+    "code": "Wunused-variable",
+    "file": "main.cpp",
+    "line": 2,
+    "error_class": "WARNING",
+    "message": "unused variable 'x'"
+  }
+}

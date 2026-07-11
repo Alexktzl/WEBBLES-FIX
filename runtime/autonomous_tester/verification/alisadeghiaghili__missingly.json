@@ -1,0 +1,27 @@
+[
+  {
+    "file": "manual_tests\\generate_sensor_data.py",
+    "line": 1,
+    "code": "import-not-found",
+    "message": "Cannot find implementation or library stub for module named \"numpy\"",
+    "verdict": "REAL_FIX",
+    "unsafe_accept": false,
+    "semantic_suspicious_change": [],
+    "before_snippet": [
+      "import numpy as np",
+      "import pandas as pd",
+      "",
+      "np.random.seed(42)"
+    ],
+    "after_snippet": [
+      "import numpy as np  # type: ignore[import-not-found]",
+      "import pandas as pd",
+      "",
+      "np.random.seed(42)"
+    ],
+    "strength": "weak",
+    "weak_markers": [
+      "type_ignore_comment"
+    ]
+  }
+]

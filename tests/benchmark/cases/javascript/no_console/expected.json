@@ -1,0 +1,7 @@
+{
+  "description": "no-console: console.log left in code",
+  "language": "javascript", "category": "WARNING",
+  "primary_error": {"code": "no-console", "file": "main.js", "line": 2,
+    "error_class": "WARNING", "message": "Unexpected console statement"},
+  "acceptable_fixes": ["remove the console.log"]
+}

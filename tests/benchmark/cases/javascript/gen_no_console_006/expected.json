@@ -1,0 +1,16 @@
+{
+  "description": "[generated] no-console: Unexpected console statement",
+  "language": "javascript",
+  "category": "WARNING",
+  "generated": true,
+  "primary_error": {
+    "code": "no-console",
+    "file": "main.js",
+    "line": 2,
+    "error_class": "WARNING",
+    "message": "Unexpected console statement"
+  },
+  "acceptable_fixes": [
+    "see after/ for the canonical fix"
+  ]
+}

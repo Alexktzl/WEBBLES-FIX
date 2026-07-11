@@ -1,0 +1,16 @@
+{
+  "description": "[generated] no-unused-vars: 'payload' is assigned a value but never used",
+  "language": "javascript",
+  "category": "CLEANUP",
+  "generated": true,
+  "primary_error": {
+    "code": "no-unused-vars",
+    "file": "main.js",
+    "line": 2,
+    "error_class": "CLEANUP",
+    "message": "'payload' is assigned a value but never used"
+  },
+  "acceptable_fixes": [
+    "see after/ for the canonical fix"
+  ]
+}

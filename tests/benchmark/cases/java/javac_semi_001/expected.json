@@ -1,0 +1,12 @@
+{
+  "description": "Missing semicolon after int declaration",
+  "language": "java",
+  "category": "CRITICAL_SYNTAX",
+  "primary_error": {
+    "code": "JAVAC_SEMI",
+    "file": "Main.java",
+    "line": 3,
+    "error_class": "CRITICAL_SYNTAX",
+    "message": "';' expected"
+  }
+}

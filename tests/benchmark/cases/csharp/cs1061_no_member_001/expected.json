@@ -1,0 +1,12 @@
+{
+  "description": "string.Length used as method instead of property",
+  "language": "csharp",
+  "category": "BLOCKING",
+  "primary_error": {
+    "code": "CS1061",
+    "file": "Program.cs",
+    "line": 4,
+    "error_class": "BLOCKING",
+    "message": "'string' does not contain a definition for 'Length' (or take method-like access)"
+  }
+}

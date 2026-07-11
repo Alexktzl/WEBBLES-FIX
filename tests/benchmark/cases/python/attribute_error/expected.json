@@ -1,0 +1,11 @@
+{
+  "description": "AttributeError: typo 'lenght' instead of len()",
+  "language": "python",
+  "category": "BLOCKING",
+  "primary_error": {
+    "code": "AttributeError", "file": "main.py", "line": 2,
+    "error_class": "STRUCTURAL",
+    "message": "'str' object has no attribute 'lenght'"
+  },
+  "acceptable_fixes": ["use len(s) instead of s.lenght()", "fix typo lenght → length"]
+}

@@ -1,0 +1,11 @@
+{
+  "description": "no-unused-vars: const unused declared but never used",
+  "language": "javascript",
+  "category": "CLEANUP",
+  "primary_error": {
+    "code": "no-unused-vars", "file": "main.js", "line": 2,
+    "error_class": "CLEANUP",
+    "message": "'unused' is assigned a value but never used"
+  },
+  "acceptable_fixes": ["remove the const unused line"]
+}

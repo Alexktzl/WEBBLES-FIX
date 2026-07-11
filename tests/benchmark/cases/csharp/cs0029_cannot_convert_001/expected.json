@@ -1,0 +1,12 @@
+{
+  "description": "String literal assigned to int",
+  "language": "csharp",
+  "category": "BLOCKING",
+  "primary_error": {
+    "code": "CS0029",
+    "file": "Program.cs",
+    "line": 3,
+    "error_class": "BLOCKING",
+    "message": "Cannot implicitly convert type 'string' to 'int'"
+  }
+}

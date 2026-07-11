@@ -1,0 +1,11 @@
+{
+  "description": "SyntaxError: missing closing paren in function signature",
+  "language": "javascript",
+  "category": "CRITICAL_SYNTAX",
+  "primary_error": {
+    "code": "SyntaxError", "file": "main.js", "line": 1,
+    "error_class": "CRITICAL_SYNTAX",
+    "message": "Unexpected token '{'"
+  },
+  "acceptable_fixes": ["close the paren before {"]
+}

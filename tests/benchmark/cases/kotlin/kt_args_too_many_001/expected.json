@@ -1,0 +1,12 @@
+{
+  "description": "Extra argument",
+  "language": "kotlin",
+  "category": "BLOCKING",
+  "primary_error": {
+    "code": "KT_ARGS",
+    "file": "Main.kt",
+    "line": 3,
+    "error_class": "BLOCKING",
+    "message": "too many arguments for public fun greet(): Unit"
+  }
+}

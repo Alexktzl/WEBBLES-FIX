@@ -1,0 +1,21 @@
+unidiff>=0.7.0
+openai>=1.0.0
+anthropic>=0.18.0
+requests>=2.31.0
+python-telegram-bot[job-queue]>=20.0
+duckduckgo-search>=6.0.0
+tomlkit>=0.12.0
+python-dotenv>=1.0.0
+eel
+hypothesis>=6.0.0
+semgrep>=1.0.0
+# --- Python static analysis stack (Stage P: паритет с Rust) ---
+# Все тулы опциональные и подключаются под флагами в `webles_config.json`.
+# Если бинаря нет в PATH — соответствующий analyzer/provider молча
+# возвращает [] (graceful, как остальные внешние тулы).
+flake8>=6.0.0           # базовый PEP-8 / pyflakes — `PythonAnalyzer`
+mypy>=1.7.0             # type-checker — `MypyAnalyzer` (P.0, флаг use_mypy)
+ruff>=0.4.0             # быстрый линтер + auto-fix — `RuffAnalyzer` (P.1, флаг use_ruff)
+                        #   и `_py_ruff_autofix` в `RuleBasedFixer` (P.4)
+bandit>=1.7.0           # security-сканер — `BanditAnalyzer` (P.2, флаг use_bandit)
+pip-audit>=2.7.0        # CVE для зависимостей — `PipAuditScanner` (K.8, флаг pip_audit)

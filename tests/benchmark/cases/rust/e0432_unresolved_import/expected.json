@@ -1,0 +1,12 @@
+{
+  "description": "E0432: unresolved import 'serde' — crate not in Cargo.toml",
+  "language": "rust",
+  "category": "BLOCKING",
+  "primary_error": {
+    "code": "E0432", "file": "Cargo.toml", "line": 4,
+    "error_class": "BUILD_SCRIPT",
+    "message": "unresolved import `serde`: add `serde` to [dependencies]"
+  },
+  "acceptable_fixes": ["add serde to Cargo.toml dependencies"],
+  "constraints_test": {"expected_do_contains": "Cargo.toml"}
+}

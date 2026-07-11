@@ -1,0 +1,11 @@
+{
+  "description": "F401: 'os' imported but unused",
+  "language": "python",
+  "category": "CLEANUP",
+  "primary_error": {
+    "code": "F401", "file": "main.py", "line": 1,
+    "error_class": "CLEANUP",
+    "message": "'os' imported but unused"
+  },
+  "acceptable_fixes": ["remove the unused import"]
+}

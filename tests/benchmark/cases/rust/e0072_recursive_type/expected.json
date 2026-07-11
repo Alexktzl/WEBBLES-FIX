@@ -1,0 +1,9 @@
+{
+  "description": "E0072: recursive type Node has infinite size",
+  "language": "rust", "category": "BLOCKING",
+  "primary_error": {"code": "E0072", "file": "src/main.rs", "line": 1,
+    "error_class": "STRUCTURAL",
+    "message": "recursive type `Node` has infinite size"},
+  "acceptable_fixes": ["wrap recursive field in Box"],
+  "symbol_graph_test": {"must_find_definition_of": "Node"}
+}

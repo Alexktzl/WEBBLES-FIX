@@ -1,0 +1,17 @@
+{
+  "description": "E0609: access to non-existent field 'player_name' on struct Player",
+  "language": "rust",
+  "category": "BLOCKING",
+  "primary_error": {
+    "code": "E0609",
+    "file": "src/main.rs",
+    "line": 4,
+    "error_class": "STRUCTURAL",
+    "message": "no field `player_name` on type `Player`"
+  },
+  "acceptable_fixes": [
+    "rename access to existing field name (.player_name → .name)"
+  ],
+  "constraints_test": {"expected_dont_contains": "add a new field"},
+  "symbol_graph_test": {"must_find_definition_of": "Player"}
+}

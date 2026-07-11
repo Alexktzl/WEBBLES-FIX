@@ -1,0 +1,5 @@
+{ "description": "no-array-constructor: use literal instead of Array()",
+  "language": "javascript", "category": "WARNING",
+  "primary_error": {"code": "no-array-constructor", "file": "main.js", "line": 1,
+    "error_class": "WARNING", "message": "The array literal notation [] is preferable"},
+  "acceptable_fixes": ["use array literal []"] }

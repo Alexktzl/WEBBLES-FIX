@@ -1,0 +1,12 @@
+{
+  "description": "Unused function parameter",
+  "language": "cpp",
+  "category": "WARNING",
+  "primary_error": {
+    "code": "Wunused-parameter",
+    "file": "main.cpp",
+    "line": 1,
+    "error_class": "WARNING",
+    "message": "unused parameter 'y'"
+  }
+}

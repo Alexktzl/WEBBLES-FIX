@@ -1,0 +1,9 @@
+{
+  "description": "Use of eval() on dynamic input",
+  "language": "javascript", "category": "SECURITY",
+  "primary_error": {"code": "dangerous_eval", "file": "main.js", "line": 2,
+    "error_class": "SECURITY", "message": "use of eval() on dynamic input"},
+  "acceptable_fixes": ["parse with JSON.parse"],
+  "constraints_test": {"expected_do_contains": "safe parser",
+    "expected_dont_contains": "blacklisting"}
+}

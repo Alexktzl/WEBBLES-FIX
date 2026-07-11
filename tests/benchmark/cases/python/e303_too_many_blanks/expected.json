@@ -1,0 +1,5 @@
+{ "description": "E303: too many blank lines (3)",
+  "language": "python", "category": "WARNING",
+  "primary_error": {"code": "E303", "file": "main.py", "line": 5,
+    "error_class": "WARNING", "message": "too many blank lines (3)"},
+  "acceptable_fixes": ["reduce to 2 blank lines"] }

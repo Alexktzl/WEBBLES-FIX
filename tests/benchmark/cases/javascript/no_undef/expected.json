@@ -1,0 +1,11 @@
+{
+  "description": "ESLint no-undef: greting used but not defined",
+  "language": "javascript",
+  "category": "BLOCKING",
+  "primary_error": {
+    "code": "no-undef", "file": "main.js", "line": 2,
+    "error_class": "STRUCTURAL",
+    "message": "'greting' is not defined"
+  },
+  "acceptable_fixes": ["declare greting", "fix typo if it was meant"]
+}

@@ -1,0 +1,33 @@
+[
+  {
+    "file": "warp_nn\\modules\\layers\\_common.py",
+    "line": 18,
+    "code": "import-not-found",
+    "message": "Cannot find implementation or library stub for module named \"warp\"",
+    "verdict": "REAL_FIX",
+    "unsafe_accept": false,
+    "semantic_suspicious_change": [],
+    "before_snippet": [
+      "",
+      "from typing import Callable",
+      "",
+      "import warp as wp",
+      "",
+      "",
+      "def overload_kernels(*, kernels: list[Callable], dtypes: list[type] = [wp.float16, wp.float32, wp.float64]):"
+    ],
+    "after_snippet": [
+      "",
+      "from collections.abc import Callable",
+      "",
+      "import warp as wp  # type: ignore[import-not-found]",
+      "",
+      "",
+      "def overload_kernels(*, kernels: list[Callable], dtypes: list[type] = [wp.float16, wp.float32, wp.float64]):"
+    ],
+    "strength": "weak",
+    "weak_markers": [
+      "type_ignore_comment"
+    ]
+  }
+]

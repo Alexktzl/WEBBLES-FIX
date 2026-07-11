@@ -1,0 +1,5 @@
+{ "description": "no-else-return: unnecessary else after return",
+  "language": "javascript", "category": "WARNING",
+  "primary_error": {"code": "no-else-return", "file": "main.js", "line": 4,
+    "error_class": "WARNING", "message": "Unnecessary 'else' after 'return'"},
+  "acceptable_fixes": ["remove the else block"] }

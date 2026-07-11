@@ -1,0 +1,12 @@
+{
+  "description": "String literal assigned to int",
+  "language": "go",
+  "category": "BLOCKING",
+  "primary_error": {
+    "code": "GO_TYPES",
+    "file": "main.go",
+    "line": 3,
+    "error_class": "BLOCKING",
+    "message": "cannot use \"hello\" (untyped string constant) as int value"
+  }
+}

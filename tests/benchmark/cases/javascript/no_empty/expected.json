@@ -1,0 +1,7 @@
+{
+  "description": "no-empty: empty block statement",
+  "language": "javascript", "category": "WARNING",
+  "primary_error": {"code": "no-empty", "file": "main.js", "line": 2,
+    "error_class": "WARNING", "message": "Empty block statement"},
+  "acceptable_fixes": ["remove the empty block"]
+}

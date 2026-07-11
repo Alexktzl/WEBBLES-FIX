@@ -1,0 +1,12 @@
+{
+  "description": "Comparing number to string literal",
+  "language": "typescript",
+  "category": "BLOCKING",
+  "primary_error": {
+    "code": "TS2367",
+    "file": "main.ts",
+    "line": 2,
+    "error_class": "BLOCKING",
+    "message": "This comparison appears to be unintentional because the types 'number' and 'string' have no overlap."
+  }
+}

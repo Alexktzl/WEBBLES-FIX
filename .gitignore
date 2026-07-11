@@ -1,0 +1,81 @@
+# --- Секреты (НЕ КОММИТИТЬ!) ---
+.env
+.env.local
+webles_secrets.json
+# webles_config.json содержит и настройки, и api_key — лучше держать локально.
+# Если хочется коммитить — сначала пересоздайте без api_key, использовав .env.
+webles_config.json
+# Бэкап конфига, который control-series скилл создаёт перед временной
+# подменой настроек (trap восстанавливает оригинал при выходе) — содержит
+# тот же api_key, что и webles_config.json. tech debt audit 2026-06-21, #8.
+*.tester_bak
+
+# --- Python байткод и cache ---
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# --- Виртуальные окружения ---
+venv/
+env/
+.venv/
+ENV/
+
+# --- Логи и временные файлы ---
+*.log
+*.log.*
+webbles_fix.log
+webles_conveyor.log
+
+# --- Накопительное состояние Webbles Fix ---
+# Память и baseline ХРАНЯТСЯ между запусками (это специально!),
+# но они привязаны к конкретному проекту и не должны попадать в репо.
+.webbles_fix_memory.json
+.webbles_fix_state.json
+.webbles_baseline.json
+.webbles_semantic_cache.json
+.webbles_crates_cache.json
+
+# --- Sandbox / temp ---
+.webles_sandbox/
+.webbles_fix/
+.webbles_reports/
+.webbles_backups/
+
+# --- Клоны тестовых проектов (чужие репозитории, не наш код) ---
+runtime/autonomous_tester/clones/
+
+# --- Одноразовые per-project runtime-директории пайплайна (см.
+# runtime/CLEANUP_POLICY.md) — .webbles/, needs_review/, baseline.json,
+# memory.json и т.п. для ОДНОГО прогона; накопительные файлы
+# (autonomous_tester/decisions.jsonl и т.п., _tmp/) исключены явно. ---
+runtime/*/
+!runtime/autonomous_tester/
+!runtime/_tmp/
+
+# --- Артефакты Rust (если случайно лежат рядом) ---
+target/
+Cargo.lock
+nul.*.rcgu.o
+
+# --- IDE ---
+.vscode/
+.idea/
+*.swp
+.DS_Store
+
+# --- Тестовый прогон ---
+*.tmp.rs
+*.tmp.py
+datasets/*.jsonl
+runtime/auto_recipes.json
+
+# --- Служебные артефакты (не в публичный репозиторий) ---
+statistic/
+chat/
+.claude/
+memory/
+.webbles_logs/
+datasets/
+*.docx

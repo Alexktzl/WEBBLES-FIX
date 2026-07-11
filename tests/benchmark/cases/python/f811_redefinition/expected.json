@@ -1,0 +1,5 @@
+{ "description": "F811: redefinition of unused handler",
+  "language": "python", "category": "WARNING",
+  "primary_error": {"code": "F811", "file": "main.py", "line": 4,
+    "error_class": "WARNING", "message": "redefinition of unused 'handler' from line 1"},
+  "acceptable_fixes": ["remove the first definition"] }

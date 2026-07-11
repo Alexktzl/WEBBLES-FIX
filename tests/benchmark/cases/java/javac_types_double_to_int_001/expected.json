@@ -1,0 +1,12 @@
+{
+  "description": "Double-to-int needs explicit cast",
+  "language": "java",
+  "category": "BLOCKING",
+  "primary_error": {
+    "code": "JAVAC_TYPES",
+    "file": "Main.java",
+    "line": 3,
+    "error_class": "BLOCKING",
+    "message": "incompatible types: possible lossy conversion from double to int"
+  }
+}

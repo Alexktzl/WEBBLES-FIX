@@ -1,0 +1,7 @@
+{
+  "description": "ZeroDivisionError: division by zero",
+  "language": "python", "category": "BLOCKING",
+  "primary_error": {"code": "ZeroDivisionError", "file": "main.py", "line": 2,
+    "error_class": "STRUCTURAL", "message": "division by zero"},
+  "acceptable_fixes": ["guard against b == 0"]
+}

@@ -1,0 +1,12 @@
+{
+  "description": "Missing comma between parameters",
+  "language": "csharp",
+  "category": "CRITICAL_SYNTAX",
+  "primary_error": {
+    "code": "CS1003",
+    "file": "Program.cs",
+    "line": 2,
+    "error_class": "CRITICAL_SYNTAX",
+    "message": "Syntax error, ',' expected"
+  }
+}

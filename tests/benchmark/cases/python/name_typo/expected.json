@@ -1,0 +1,12 @@
+{
+  "description": "NameError: greett (typo for greet). Python 3.10+ suggests fix in message.",
+  "language": "python",
+  "category": "BLOCKING",
+  "primary_error": {
+    "code": "NameError", "file": "main.py", "line": 4,
+    "error_class": "STRUCTURAL",
+    "message": "name 'greett' is not defined. Did you mean: 'greet'?"
+  },
+  "acceptable_fixes": ["fix typo greett → greet"],
+  "symbol_graph_test": {"must_find_definition_of": "greet"}
+}

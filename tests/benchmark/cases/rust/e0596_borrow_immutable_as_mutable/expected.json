@@ -1,0 +1,8 @@
+{
+  "description": "E0596: cannot borrow v as mutable, not declared mut",
+  "language": "rust", "category": "BLOCKING",
+  "primary_error": {"code": "E0596", "file": "src/main.rs", "line": 3,
+    "error_class": "OWNERSHIP",
+    "message": "cannot borrow `v` as mutable, as it is not declared as mutable"},
+  "acceptable_fixes": ["add mut to the let binding"]
+}

@@ -1,0 +1,5 @@
+{ "description": "E0282: type annotations needed for parse()",
+  "language": "rust", "category": "BLOCKING",
+  "primary_error": {"code": "E0282", "file": "src/main.rs", "line": 2,
+    "error_class": "STRUCTURAL", "message": "type annotations needed"},
+  "acceptable_fixes": ["annotate the binding type"] }

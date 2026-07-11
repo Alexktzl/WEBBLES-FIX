@@ -1,0 +1,8 @@
+{
+  "description": "E0499: cannot borrow v as mutable more than once",
+  "language": "rust", "category": "BLOCKING",
+  "primary_error": {"code": "E0499", "file": "src/main.rs", "line": 4,
+    "error_class": "OWNERSHIP",
+    "message": "cannot borrow `v` as mutable more than once at a time"},
+  "acceptable_fixes": ["scope the first mutable borrow"]
+}

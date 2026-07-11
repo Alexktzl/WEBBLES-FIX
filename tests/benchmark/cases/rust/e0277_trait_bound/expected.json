@@ -1,0 +1,13 @@
+{
+  "description": "E0277: Custom doesn't implement Display trait",
+  "language": "rust",
+  "category": "BLOCKING",
+  "primary_error": {
+    "code": "E0277", "file": "src/main.rs", "line": 5,
+    "error_class": "STRUCTURAL",
+    "message": "`Custom` doesn't implement `std::fmt::Display`"
+  },
+  "acceptable_fixes": ["implement Display for Custom", "use {:?} with derive(Debug)"],
+  "constraints_test": {"expected_dont_contains": "allow"},
+  "symbol_graph_test": {"must_find_definition_of": "Custom"}
+}

@@ -1,0 +1,19 @@
+{
+  "description": "[generated] unused_import: unused import: `std::collections::VecDeque`",
+  "language": "rust",
+  "category": "CLEANUP",
+  "generated": true,
+  "primary_error": {
+    "code": "unused_import",
+    "file": "src/main.rs",
+    "line": 1,
+    "error_class": "CLEANUP",
+    "message": "unused import: `std::collections::VecDeque`"
+  },
+  "acceptable_fixes": [
+    "see after/ for the canonical fix"
+  ],
+  "constraints_test": {
+    "expected_do_contains": "Remove the unused"
+  }
+}

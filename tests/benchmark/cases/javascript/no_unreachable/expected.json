@@ -1,0 +1,7 @@
+{
+  "description": "no-unreachable: code after return",
+  "language": "javascript", "category": "WARNING",
+  "primary_error": {"code": "no-unreachable", "file": "main.js", "line": 3,
+    "error_class": "WARNING", "message": "Unreachable code"},
+  "acceptable_fixes": ["remove the unreachable statement"]
+}

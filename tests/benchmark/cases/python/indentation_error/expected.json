@@ -1,0 +1,11 @@
+{
+  "description": "IndentationError: expected indented block after if:",
+  "language": "python",
+  "category": "CRITICAL_SYNTAX",
+  "primary_error": {
+    "code": "IndentationError", "file": "main.py", "line": 3,
+    "error_class": "CRITICAL_SYNTAX",
+    "message": "expected an indented block after 'if' statement on line 2"
+  },
+  "acceptable_fixes": ["indent the print statement"]
+}

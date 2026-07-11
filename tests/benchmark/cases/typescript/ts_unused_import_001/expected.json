@@ -1,0 +1,12 @@
+{
+  "description": "Unused import",
+  "language": "typescript",
+  "category": "CLEANUP",
+  "primary_error": {
+    "code": "TS6133",
+    "file": "main.ts",
+    "line": 1,
+    "error_class": "CLEANUP",
+    "message": "'foo' is declared but its value is never read."
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "description": "[generated] eqeqeq: Expected '===' and instead saw '=='",
+  "language": "javascript",
+  "category": "WARNING",
+  "generated": true,
+  "primary_error": {
+    "code": "eqeqeq",
+    "file": "main.js",
+    "line": 2,
+    "error_class": "WARNING",
+    "message": "Expected '===' and instead saw '=='"
+  },
+  "acceptable_fixes": [
+    "see after/ for the canonical fix"
+  ]
+}

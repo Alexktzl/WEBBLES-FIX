@@ -1,0 +1,10 @@
+{
+  "description": "E0425: cannot find function comput (typo for compute)",
+  "language": "rust", "category": "BLOCKING",
+  "primary_error": {"code": "E0425", "file": "src/main.rs", "line": 3,
+    "error_class": "STRUCTURAL",
+    "message": "cannot find function `comput` in this scope. help: a function with a similar name exists: `compute`"},
+  "acceptable_fixes": ["fix typo comput → compute"],
+  "constraints_test": {"expected_dont_contains": "stub"},
+  "symbol_graph_test": {"must_find_definition_of": "compute"}
+}

@@ -1,0 +1,12 @@
+{
+  "description": "Missing imports for Map/HashMap",
+  "language": "java",
+  "category": "BLOCKING",
+  "primary_error": {
+    "code": "JAVAC_PACKAGE",
+    "file": "Main.java",
+    "line": 3,
+    "error_class": "BLOCKING",
+    "message": "package java.util does not exist"
+  }
+}

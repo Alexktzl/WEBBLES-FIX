@@ -1,0 +1,29 @@
+[
+  {
+    "file": "src\\labtoolkit\\SpectrumAnalyser\\__init____.py",
+    "line": 14,
+    "code": "import-not-found",
+    "message": "Cannot find implementation or library stub for module named \"pyvisa.constants\"",
+    "verdict": "REAL_FIX",
+    "unsafe_accept": false,
+    "semantic_suspicious_change": [],
+    "before_snippet": [
+      "    NegPeak = enum_auto()",
+      "",
+      "",
+      "",
+      "from pyvisa.constants import VI_GPIB_REN_ADDRESS_GTL"
+    ],
+    "after_snippet": [
+      "",
+      "",
+      "",
+      "from enum import IntFlag",
+      "from enum import auto as enum_auto",
+      "",
+      ""
+    ],
+    "strength": "strong",
+    "weak_markers": []
+  }
+]

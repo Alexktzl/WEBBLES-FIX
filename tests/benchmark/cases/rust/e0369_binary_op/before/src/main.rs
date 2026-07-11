@@ -1,0 +1,4 @@
+fn main() {
+    let s = "a" + "b";
+    println!("{}", s);
+}

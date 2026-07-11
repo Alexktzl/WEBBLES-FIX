@@ -1,0 +1,12 @@
+{
+  "description": "Uninitialised local read",
+  "language": "csharp",
+  "category": "BLOCKING",
+  "primary_error": {
+    "code": "CS0165",
+    "file": "Program.cs",
+    "line": 4,
+    "error_class": "BLOCKING",
+    "message": "Use of unassigned local variable 'x'"
+  }
+}

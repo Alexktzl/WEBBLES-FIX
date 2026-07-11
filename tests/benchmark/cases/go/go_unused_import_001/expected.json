@@ -1,0 +1,12 @@
+{
+  "description": "Unused fmt import",
+  "language": "go",
+  "category": "CLEANUP",
+  "primary_error": {
+    "code": "GO_UNUSED_IMP",
+    "file": "main.go",
+    "line": 2,
+    "error_class": "CLEANUP",
+    "message": "imported and not used: \"fmt\""
+  }
+}

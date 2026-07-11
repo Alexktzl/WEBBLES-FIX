@@ -1,0 +1,5 @@
+{ "description": "F-string missing f prefix: braces emitted literally",
+  "language": "python", "category": "WARNING",
+  "primary_error": {"code": "F541", "file": "main.py", "line": 2,
+    "error_class": "WARNING", "message": "f-string without any placeholders or missing f prefix"},
+  "acceptable_fixes": ["add f prefix to the string"] }

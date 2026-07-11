@@ -1,0 +1,282 @@
+[
+  {
+    "file": "pycfmodel\\resolver.py",
+    "line": 36,
+    "code": "union-attr",
+    "message": "Item \"None\" of \"Match[str] | None\" has no attribute \"group\"",
+    "verdict": "REAL_FIX",
+    "unsafe_accept": false,
+    "before_snippet": [
+      "",
+      "    if isinstance(function, str):",
+      "        if CONTAINS_SSM_PARAMETER.match(function):",
+      "            ssm_parameter_key = CONTAINS_SSM_PARAMETER.match(function).group(1)",
+      "            return resolve_ssm(ssm_parameter_key, params)",
+      "        if function.lower() in [\"true\", \"false\"]:",
+      "            return function.lower()"
+    ],
+    "after_snippet": [
+      "",
+      "    if isinstance(function, str):",
+      "        match = CONTAINS_SSM_PARAMETER.match(function)",
+      "        if match:",
+      "            ssm_parameter_key = match.group(1)",
+      "            return resolve_ssm(ssm_parameter_key, params)",
+      "        if function.lower() in [\"true\", \"false\"]:"
+    ]
+  },
+  {
+    "file": "tests\\resources\\properties\\test_statement.py",
+    "line": 121,
+    "code": "arg-type",
+    "message": "Argument 1 to \"Statement\" has incompatible type \"**dict[str, Sequence[str]]\"; expected \"str | FunctionDict | None\"",
+    "verdict": "STILL_FLAGGED",
+    "unsafe_accept": false,
+    "before_snippet": [
+      "        (Statement(**{\"Effect\": \"Allow\", \"Action\": \"ec2:Run?nstances\", \"Resource\": [\"arn\"]}), [\"ec2:RunInstances\"]),",
+      "        (Statement(**{\"Effect\": \"Allow\", \"Action\": \"ec?:RunInstances\", \"Resource\": [\"arn\"]}), [\"ec2:RunInstances\"]),",
+      "        (",
+      "            Statement(**{\"Effect\": \"Allow\", \"Action\": \"ec2:Run*\", \"Resource\": [\"arn\"]}),",
+      "            [\"ec2:RunInstances\", \"ec2:RunScheduledInstances\"],",
+      "        ),",
+      "    ],"
+    ],
+    "after_snippet": [
+      "        (Statement(**{\"Effect\": \"Allow\", \"Action\": \"ec2:Run?nstances\", \"Resource\": [\"arn\"]}), [\"ec2:RunInstances\"]),",
+      "        (Statement(Effect=\"Allow\", Action=\"ec?:RunInstances\", Resource=[\"arn\"]), [\"ec2:RunInstances\"]),",
+      "        (",
+      "            Statement(Effect=\"Allow\", Action=\"ec2:Run*\", Resource=[\"arn\"]),",
+      "            [\"ec2:RunInstances\", \"ec2:RunScheduledInstances\"],",
+      "        ),",
+      "    ],"
+    ]
+  },
+  {
+    "file": "tests\\resources\\properties\\test_statement.py",
+    "line": 119,
+    "code": "arg-type",
+    "message": "Argument 1 to \"Statement\" has incompatible type \"**dict[str, Sequence[str]]\"; expected \"str | FunctionDict | None\"",
+    "verdict": "STILL_FLAGGED",
+    "unsafe_accept": false,
+    "before_snippet": [
+      "    [",
+      "        (Statement(**{\"Effect\": \"Allow\", \"Action\": \"ec2:RunInstances\", \"Resource\": [\"arn\"]}), [\"ec2:RunInstances\"]),",
+      "        (Statement(**{\"Effect\": \"Allow\", \"Action\": \"ec2:Run?nstances\", \"Resource\": [\"arn\"]}), [\"ec2:RunInstances\"]),",
+      "        (Statement(**{\"Effect\": \"Allow\", \"Action\": \"ec?:RunInstances\", \"Resource\": [\"arn\"]}), [\"ec2:RunInstances\"]),",
+      "        (",
+      "            Statement(**{\"Effect\": \"Allow\", \"Action\": \"ec2:Run*\", \"Resource\": [\"arn\"]}),",
+      "            [\"ec2:RunInstances\", \"ec2:RunScheduledInstances\"],"
+    ],
+    "after_snippet": [
+      "    [",
+      "        (Statement(**{\"Effect\": \"Allow\", \"Action\": \"ec2:RunInstances\", \"Resource\": [\"arn\"]}), [\"ec2:RunInstances\"]),",
+      "        (Statement(**{\"Effect\": \"Allow\", \"Action\": \"ec2:Run?nstances\", \"Resource\": [\"arn\"]}), [\"ec2:RunInstances\"]),",
+      "        (Statement(Effect=\"Allow\", Action=\"ec?:RunInstances\", Resource=[\"arn\"]), [\"ec2:RunInstances\"]),",
+      "        (",
+      "            Statement(Effect=\"Allow\", Action=\"ec2:Run*\", Resource=[\"arn\"]),",
+      "            [\"ec2:RunInstances\", \"ec2:RunScheduledInstances\"],"
+    ]
+  },
+  {
+    "file": "tests\\resources\\test_ec2_vpc_endpoint_policy.py",
+    "line": 51,
+    "code": "union-attr",
+    "message": "Item \"FunctionDict\" of \"EC2VpcEndpointPolicyProperties | FunctionDict\" has no attribute \"PolicyDocument\"",
+    "verdict": "STILL_FLAGGED",
+    "unsafe_accept": false,
+    "before_snippet": [
+      "    assert ec2_vpc_endpoint_policy.Properties.VpcId == \"vpc-123-abc\"",
+      "    assert len(ec2_vpc_endpoint_policy.Properties.RouteTableIds) == 2",
+      "    assert ec2_vpc_endpoint_policy.Properties.PolicyDocument.Statement[0].Effect == \"Allow\"",
+      "    assert ec2_vpc_endpoint_policy.Properties.PolicyDocument.Statement[0].Resource == \"*\"",
+      "",
+      "",
+      "def test_ec2_vpc_endpoint_policy_documents(ec2_vpc_endpoint_policy):"
+    ],
+    "after_snippet": [
+      "    assert ec2_vpc_endpoint_policy.Properties.VpcId == \"vpc-123-abc\"",
+      "    assert len(ec2_vpc_endpoint_policy.Properties.RouteTableIds) == 2",
+      "    assert ec2_vpc_endpoint_policy.Properties.PolicyDocument is not None",
+      "    from pycfmodel.model.resources.properties.policy_document import PolicyDocument",
+      "    policy_doc: PolicyDocument = ec2_vpc_endpoint_policy.Properties.PolicyDocument",
+      "    assert policy_doc.Statement[0].Effect == \"Allow\"",
+      "    assert policy_doc.Statement[0].Resource == \"*\""
+    ]
+  },
+  {
+    "file": "tests\\resources\\test_ec2_vpc_endpoint_policy.py",
+    "line": 52,
+    "code": "union-attr",
+    "message": "Item \"FunctionDict\" of \"EC2VpcEndpointPolicyProperties | FunctionDict\" has no attribute \"PolicyDocument\"",
+    "verdict": "STILL_FLAGGED",
+    "unsafe_accept": false,
+    "before_snippet": [
+      "    assert len(ec2_vpc_endpoint_policy.Properties.RouteTableIds) == 2",
+      "    assert ec2_vpc_endpoint_policy.Properties.PolicyDocument.Statement[0].Effect == \"Allow\"",
+      "    assert ec2_vpc_endpoint_policy.Properties.PolicyDocument.Statement[0].Resource == \"*\"",
+      "",
+      "",
+      "def test_ec2_vpc_endpoint_policy_documents(ec2_vpc_endpoint_policy):",
+      "    assert ec2_vpc_endpoint_policy.policy_documents == ["
+    ],
+    "after_snippet": [
+      "    assert len(ec2_vpc_endpoint_policy.Properties.RouteTableIds) == 2",
+      "    assert ec2_vpc_endpoint_policy.Properties.PolicyDocument is not None",
+      "    from pycfmodel.model.resources.properties.policy_document import PolicyDocument",
+      "    policy_doc: PolicyDocument = ec2_vpc_endpoint_policy.Properties.PolicyDocument",
+      "    assert policy_doc.Statement[0].Effect == \"Allow\"",
+      "    assert policy_doc.Statement[0].Resource == \"*\"",
+      ""
+    ]
+  },
+  {
+    "file": "pycfmodel\\model\\resources\\properties\\policy_document.py",
+    "line": 137,
+    "code": "attr-defined",
+    "message": "Statement? has no attribute \"get_expanded_action_list\"",
+    "verdict": "STILL_FLAGGED",
+    "unsafe_accept": false,
+    "before_snippet": [
+      "        actions = set()",
+      "        for statement in self._statement_as_list():",
+      "            if self._is_statement_effect_allow(statement.Effect):",
+      "                actions.update(statement.get_expanded_action_list())",
+      "        return sorted(actions)"
+    ],
+    "after_snippet": [
+      "        actions = set()",
+      "        for statement in self._statement_as_list():",
+      "            if not isinstance(statement, Statement):",
+      "                continue",
+      "            if self._is_statement_effect_allow(statement.effect):",
+      "                actions.update(statement.get_expanded_action_list())",
+      "        return sorted(actions)"
+    ]
+  },
+  {
+    "file": "pycfmodel\\resolver.py",
+    "line": 66,
+    "code": "operator",
+    "message": "Cannot call function of unknown type",
+    "verdict": "REAL_FIX",
+    "unsafe_accept": false,
+    "before_snippet": [
+      "            function_name = next(iter(function))",
+      "            function_resolver = FUNCTION_MAPPINGS[function_name]",
+      "            return function_resolver(function[function_name], params, mappings, conditions)",
+      "",
+      "        result = {}",
+      "        for k, v in function.items():",
+      "            resolved_value = resolve(v, params, mappings, conditions)"
+    ],
+    "after_snippet": [
+      "        if is_resolvable_dict(function):",
+      "            function_name = next(iter(function))",
+      "            from typing import Any",
+      "            function_resolver: Any = FUNCTION_MAPPINGS[function_name]",
+      "            return function_resolver(function[function_name], params, mappings, conditions)",
+      "",
+      "        result: Dict[Any, Any] = {}"
+    ]
+  },
+  {
+    "file": "tests\\resources\\test_ec2_vpc_endpoint_policy.py",
+    "line": 53,
+    "code": "union-attr",
+    "message": "Item \"FunctionDict\" of \"PolicyDocument | Any | FunctionDict\" has no attribute \"Statement\"",
+    "verdict": "STILL_FLAGGED",
+    "unsafe_accept": false,
+    "before_snippet": [
+      "    assert ec2_vpc_endpoint_policy.Properties.PolicyDocument.Statement[0].Effect == \"Allow\"",
+      "    assert ec2_vpc_endpoint_policy.Properties.PolicyDocument.Statement[0].Resource == \"*\"",
+      "",
+      "",
+      "def test_ec2_vpc_endpoint_policy_documents(ec2_vpc_endpoint_policy):",
+      "    assert ec2_vpc_endpoint_policy.policy_documents == [",
+      "        OptionallyNamedPolicyDocument(name=None, policy_document=ec2_vpc_endpoint_policy.Properties.PolicyDocument)"
+    ],
+    "after_snippet": [
+      "    assert ec2_vpc_endpoint_policy.Properties.PolicyDocument is not None",
+      "    from pycfmodel.model.resources.properties.policy_document import PolicyDocument",
+      "    policy_doc: PolicyDocument = ec2_vpc_endpoint_policy.Properties.PolicyDocument",
+      "    assert policy_doc.Statement[0].Effect == \"Allow\"",
+      "    assert policy_doc.Statement[0].Resource == \"*\"",
+      "",
+      ""
+    ]
+  },
+  {
+    "file": "pycfmodel\\model\\resources\\properties\\policy_document.py",
+    "line": 138,
+    "code": "attr-defined",
+    "message": "Statement? has no attribute \"Effect\"",
+    "verdict": "STILL_FLAGGED",
+    "unsafe_accept": false,
+    "before_snippet": [
+      "        for statement in self._statement_as_list():",
+      "            if self._is_statement_effect_allow(statement.Effect):",
+      "                actions.update(statement.get_expanded_action_list())",
+      "        return sorted(actions)"
+    ],
+    "after_snippet": [
+      "        for statement in self._statement_as_list():",
+      "            if not isinstance(statement, Statement):",
+      "                continue",
+      "            if self._is_statement_effect_allow(statement.effect):",
+      "                actions.update(statement.get_expanded_action_list())",
+      "        return sorted(actions)"
+    ]
+  },
+  {
+    "file": "pycfmodel\\resolver.py",
+    "line": 69,
+    "code": "assignment",
+    "message": "Incompatible types in assignment (expression has type \"dict[Never, Never]\", variable has type \"list[Any]\")",
+    "verdict": "REAL_FIX",
+    "unsafe_accept": false,
+    "before_snippet": [
+      "",
+      "        result = {}",
+      "        for k, v in function.items():",
+      "            resolved_value = resolve(v, params, mappings, conditions)",
+      "            if resolved_value != AWS_NOVALUE:",
+      "                result[k] = resolved_value",
+      "        return result"
+    ],
+    "after_snippet": [
+      "            function_resolver: Any = FUNCTION_MAPPINGS[function_name]",
+      "            return function_resolver(function[function_name], params, mappings, conditions)",
+      "",
+      "        result: Dict[Any, Any] = {}",
+      "        for k, v in function.items():",
+      "            resolved_value = resolve(v, params, mappings, conditions)",
+      "            if resolved_value != AWS_NOVALUE:"
+    ]
+  },
+  {
+    "file": "pycfmodel\\model\\types.py",
+    "line": 43,
+    "code": "return-value",
+    "message": "Incompatible return value type (got \"LooseIPv4Network\", expected \"IPv4Network\")",
+    "verdict": "REAL_FIX",
+    "unsafe_accept": false,
+    "before_snippet": [
+      "",
+      "    @classmethod",
+      "    def _validate(cls, input_value: Any) -> IPv4Network:",
+      "        return cls(input_value)",
+      "",
+      "",
+      "class LooseIPv6Network:"
+    ],
+    "after_snippet": [
+      "",
+      "    @classmethod",
+      "    def _validate(cls, input_value: Any) -> Any:",
+      "        return cls(input_value)",
+      "",
+      "",
+      "class LooseIPv6Network:"
+    ]
+  }
+]

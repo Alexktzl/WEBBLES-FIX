@@ -1,0 +1,7 @@
+{
+  "description": "no-constant-condition: if(true) is always true",
+  "language": "javascript", "category": "WARNING",
+  "primary_error": {"code": "no-constant-condition", "file": "main.js", "line": 2,
+    "error_class": "WARNING", "message": "Unexpected constant condition"},
+  "acceptable_fixes": ["remove the constant condition"]
+}

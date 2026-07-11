@@ -1,0 +1,5 @@
+{ "description": "clippy::needless_borrow: double reference where one suffices",
+  "language": "rust", "category": "WARNING",
+  "primary_error": {"code": "clippy::needless_borrow", "file": "src/main.rs", "line": 4,
+    "error_class": "WARNING", "message": "this expression borrows a reference that is immediately dereferenced"},
+  "acceptable_fixes": ["remove the extra &"] }

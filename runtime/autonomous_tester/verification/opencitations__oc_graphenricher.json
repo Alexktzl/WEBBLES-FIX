@@ -1,0 +1,29 @@
+[
+  {
+    "file": "tests\\fixtures\\generate_test_graphset.py",
+    "line": 9,
+    "code": "import-not-found",
+    "message": "Cannot find implementation or library stub for module named \"oc_ocdm\"",
+    "verdict": "STILL_FLAGGED",
+    "unsafe_accept": false,
+    "semantic_suspicious_change": [],
+    "before_snippet": [
+      "from pathlib import Path",
+      "from typing import cast",
+      "",
+      "from oc_ocdm import Storer",
+      "from oc_ocdm.graph import GraphSet",
+      "from oc_ocdm.support import create_date",
+      ""
+    ],
+    "after_snippet": [
+      "from pathlib import Path",
+      "from typing import cast",
+      "",
+      "from oc_ocdm import Storer  # type: ignore[import-not-found]",
+      "from oc_ocdm.graph import GraphSet",
+      "from oc_ocdm.support import create_date",
+      ""
+    ]
+  }
+]

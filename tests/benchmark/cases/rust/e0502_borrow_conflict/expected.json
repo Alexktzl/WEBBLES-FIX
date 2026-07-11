@@ -1,0 +1,9 @@
+{
+  "description": "E0502: cannot borrow v as mutable because also borrowed as immutable",
+  "language": "rust", "category": "BLOCKING",
+  "primary_error": {"code": "E0502", "file": "src/main.rs", "line": 4,
+    "error_class": "OWNERSHIP",
+    "message": "cannot borrow `v` as mutable because it is also borrowed as immutable"},
+  "acceptable_fixes": ["copy the value out before mutation", "scope the immutable borrow"],
+  "constraints_test": {"expected_dont_contains": "unsafe"}
+}

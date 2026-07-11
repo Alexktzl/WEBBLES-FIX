@@ -1,0 +1,16 @@
+{
+  "description": "[generated] F401: 'hashlib' imported but unused",
+  "language": "python",
+  "category": "CLEANUP",
+  "generated": true,
+  "primary_error": {
+    "code": "F401",
+    "file": "main.py",
+    "line": 1,
+    "error_class": "CLEANUP",
+    "message": "'hashlib' imported but unused"
+  },
+  "acceptable_fixes": [
+    "see after/ for the canonical fix"
+  ]
+}

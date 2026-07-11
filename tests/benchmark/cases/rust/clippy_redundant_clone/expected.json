@@ -1,0 +1,8 @@
+{
+  "description": "clippy::redundant_clone: clone of s never used afterwards",
+  "language": "rust", "category": "WARNING",
+  "primary_error": {"code": "clippy::redundant_clone", "file": "src/main.rs", "line": 3,
+    "error_class": "WARNING",
+    "message": "redundant clone"},
+  "acceptable_fixes": ["remove the .clone()"]
+}

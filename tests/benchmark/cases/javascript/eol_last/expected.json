@@ -1,0 +1,7 @@
+{
+  "description": "eol-last: file does not end with newline",
+  "language": "javascript", "category": "WARNING",
+  "primary_error": {"code": "eol-last", "file": "main.js", "line": 2,
+    "error_class": "WARNING", "message": "Newline required at end of file but not found"},
+  "acceptable_fixes": ["add trailing newline"]
+}

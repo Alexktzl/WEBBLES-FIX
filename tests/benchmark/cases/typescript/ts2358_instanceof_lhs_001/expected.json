@@ -1,0 +1,12 @@
+{
+  "description": "instanceof LHS must be object/any",
+  "language": "typescript",
+  "category": "BLOCKING",
+  "primary_error": {
+    "code": "TS2358",
+    "file": "main.ts",
+    "line": 2,
+    "error_class": "BLOCKING",
+    "message": "The left-hand side of an 'instanceof' expression must be of type 'any', an object type or a type parameter."
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "description": "Dead code after return",
+  "language": "csharp",
+  "category": "WARNING",
+  "primary_error": {
+    "code": "CS0162",
+    "file": "Program.cs",
+    "line": 4,
+    "error_class": "WARNING",
+    "message": "Unreachable code detected"
+  }
+}

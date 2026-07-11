@@ -1,0 +1,7 @@
+{
+  "description": "ModuleNotFoundError: reqests (typo for requests)",
+  "language": "python", "category": "BLOCKING",
+  "primary_error": {"code": "ModuleNotFoundError", "file": "main.py", "line": 1,
+    "error_class": "BUILD_SCRIPT", "message": "No module named 'reqests'"},
+  "acceptable_fixes": ["fix typo reqests → requests"]
+}

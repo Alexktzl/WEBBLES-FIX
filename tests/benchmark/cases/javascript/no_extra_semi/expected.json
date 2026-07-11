@@ -1,0 +1,7 @@
+{
+  "description": "no-extra-semi: unnecessary double semicolon",
+  "language": "javascript", "category": "WARNING",
+  "primary_error": {"code": "no-extra-semi", "file": "main.js", "line": 2,
+    "error_class": "WARNING", "message": "Unnecessary semicolon"},
+  "acceptable_fixes": ["remove the extra semicolon"]
+}

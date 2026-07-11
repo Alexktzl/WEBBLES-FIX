@@ -1,0 +1,5 @@
+{ "description": "E401: multiple imports on one line",
+  "language": "python", "category": "WARNING",
+  "primary_error": {"code": "E401", "file": "main.py", "line": 1,
+    "error_class": "WARNING", "message": "multiple imports on one line"},
+  "acceptable_fixes": ["split into separate import statements"] }

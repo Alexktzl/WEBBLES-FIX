@@ -1,0 +1,9 @@
+{
+  "description": "Hardcoded API key literal in source",
+  "language": "python", "category": "SECURITY",
+  "primary_error": {"code": "hardcoded_secret", "file": "main.py", "line": 3,
+    "error_class": "SECURITY", "message": "hardcoded API key in source"},
+  "acceptable_fixes": ["read the key from os.environ"],
+  "constraints_test": {"expected_do_contains": "environment variable",
+    "expected_dont_contains": "default value"}
+}

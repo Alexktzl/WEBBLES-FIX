@@ -1,0 +1,12 @@
+{
+  "description": "Trailing whitespace cleanup",
+  "language": "kotlin",
+  "category": "CLEANUP",
+  "primary_error": {
+    "code": "KT_TRAILING_WS",
+    "file": "Main.kt",
+    "line": 1,
+    "error_class": "CLEANUP",
+    "message": "trailing whitespace at end of line"
+  }
+}

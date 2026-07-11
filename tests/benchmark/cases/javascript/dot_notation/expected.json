@@ -1,0 +1,5 @@
+{ "description": "dot-notation: use obj.name instead of obj[\"name\"]",
+  "language": "javascript", "category": "WARNING",
+  "primary_error": {"code": "dot-notation", "file": "main.js", "line": 2,
+    "error_class": "WARNING", "message": "[\"name\"] is better written in dot notation"},
+  "acceptable_fixes": ["use dot notation"] }

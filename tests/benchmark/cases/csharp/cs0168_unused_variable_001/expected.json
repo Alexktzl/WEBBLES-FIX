@@ -1,0 +1,12 @@
+{
+  "description": "Unused declared variable",
+  "language": "csharp",
+  "category": "WARNING",
+  "primary_error": {
+    "code": "CS0168",
+    "file": "Program.cs",
+    "line": 3,
+    "error_class": "WARNING",
+    "message": "The variable 'x' is declared but never used"
+  }
+}

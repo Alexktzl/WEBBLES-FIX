@@ -1,0 +1,5 @@
+{ "description": "no-func-assign: reassigning a function declaration",
+  "language": "javascript", "category": "BLOCKING",
+  "primary_error": {"code": "no-func-assign", "file": "main.js", "line": 4,
+    "error_class": "STRUCTURAL", "message": "'handler' is a function"},
+  "acceptable_fixes": ["use a separate variable"] }

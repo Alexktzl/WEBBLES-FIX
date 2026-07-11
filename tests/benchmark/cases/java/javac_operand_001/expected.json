@@ -1,0 +1,12 @@
+{
+  "description": "Operator - not applicable to String, int",
+  "language": "java",
+  "category": "BLOCKING",
+  "primary_error": {
+    "code": "JAVAC_OPERAND",
+    "file": "Main.java",
+    "line": 3,
+    "error_class": "BLOCKING",
+    "message": "bad operand types for binary operator '-'"
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "description": "TypeError: Cannot read properties of null",
+  "language": "javascript",
+  "category": "BLOCKING",
+  "primary_error": {
+    "code": "TypeError", "file": "main.js", "line": 2,
+    "error_class": "STRUCTURAL",
+    "message": "Cannot read properties of null (reading 'name')"
+  },
+  "acceptable_fixes": ["use optional chaining ?.", "guard with if user"]
+}

@@ -1,0 +1,5 @@
+{ "description": "clippy::len_zero: use is_empty() instead of len() == 0",
+  "language": "rust", "category": "WARNING",
+  "primary_error": {"code": "clippy::len_zero", "file": "src/main.rs", "line": 3,
+    "error_class": "WARNING", "message": "length comparison to zero"},
+  "acceptable_fixes": ["use .is_empty()"] }

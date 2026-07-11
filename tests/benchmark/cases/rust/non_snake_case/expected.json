@@ -1,0 +1,5 @@
+{ "description": "non_snake_case: variable myValue should be snake_case",
+  "language": "rust", "category": "WARNING",
+  "primary_error": {"code": "non_snake_case", "file": "src/main.rs", "line": 2,
+    "error_class": "WARNING", "message": "variable `myValue` should have a snake case name"},
+  "acceptable_fixes": ["rename to my_value"] }

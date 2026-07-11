@@ -1,0 +1,5 @@
+{ "description": "valid-typeof: typo strng in typeof comparison",
+  "language": "javascript", "category": "BLOCKING",
+  "primary_error": {"code": "valid-typeof", "file": "main.js", "line": 2,
+    "error_class": "STRUCTURAL", "message": "Invalid typeof comparison value"},
+  "acceptable_fixes": ["fix typo strng -> string"] }

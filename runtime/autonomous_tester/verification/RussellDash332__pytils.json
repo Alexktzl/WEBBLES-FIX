@@ -1,0 +1,39 @@
+[
+  {
+    "file": "fast_fourier_transform.py",
+    "line": 152,
+    "code": "assignment",
+    "message": "Incompatible types in assignment (expression has type overloaded function, variable has type \"Callable[[SupportsFloat | SupportsIndex, SupportsFloat | SupportsIndex], float]\")",
+    "verdict": "REAL_FIX",
+    "unsafe_accept": true,
+    "semantic_suspicious_change": [],
+    "before_snippet": [
+      "    while v[b] == 0: b += 1",
+      "    v = v[b:]; vi = [pow(v[0], -1, M)]; n = len(u)-len(v)+1; x = 1; w = []",
+      "    while x < n:",
+      "        x <<= 1",
+      "        while len(w) < min(x, len(v)): w.append(v[len(w)])",
+      "        q = mult(mult(vi, vi), w)",
+      "        while len(w) > min(x, len(v)) and w[-1] == 0: w.pop()"
+    ],
+    "after_snippet": [
+      "    while x < n:",
+      "        x <<= 1",
+      "        while len(w) < min(x, len(v)): w.append(v[len(w)])",
+      "        res_q = mult(mult(vi, vi), w)",
+      "        while len(w) > min(x, len(v)) and w[-1] == 0: w.pop()",
+      "        while len(vi) < x: vi.append(0)",
+      "        for i in range(len(vi)):"
+    ],
+    "strength": "strong",
+    "weak_markers": [],
+    "weak_category": null,
+    "unsafe_accept_reason": {
+      "missing_defs": [
+        "sub"
+      ],
+      "missing_classes": [],
+      "missing_imports": []
+    }
+  }
+]

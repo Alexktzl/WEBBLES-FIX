@@ -1,0 +1,5 @@
+{ "description": "clippy::clone_on_copy: clone on a Copy type i32",
+  "language": "rust", "category": "WARNING",
+  "primary_error": {"code": "clippy::clone_on_copy", "file": "src/main.rs", "line": 3,
+    "error_class": "WARNING", "message": "using `clone` on type `i32` which implements the `Copy` trait"},
+  "acceptable_fixes": ["remove the .clone()"] }

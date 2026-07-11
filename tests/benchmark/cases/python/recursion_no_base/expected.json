@@ -1,0 +1,7 @@
+{
+  "description": "RecursionError: factorial has no base case",
+  "language": "python", "category": "BLOCKING",
+  "primary_error": {"code": "RecursionError", "file": "main.py", "line": 2,
+    "error_class": "STRUCTURAL", "message": "maximum recursion depth exceeded"},
+  "acceptable_fixes": ["add base case for n <= 1"]
+}

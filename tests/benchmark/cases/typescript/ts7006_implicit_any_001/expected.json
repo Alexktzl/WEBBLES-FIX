@@ -1,0 +1,12 @@
+{
+  "description": "Missing parameter type annotation",
+  "language": "typescript",
+  "category": "WARNING",
+  "primary_error": {
+    "code": "TS7006",
+    "file": "main.ts",
+    "line": 1,
+    "error_class": "WARNING",
+    "message": "Parameter 'x' implicitly has an 'any' type."
+  }
+}

@@ -1,0 +1,5 @@
+{ "description": "E231: missing whitespace after comma",
+  "language": "python", "category": "WARNING",
+  "primary_error": {"code": "E231", "file": "main.py", "line": 2,
+    "error_class": "WARNING", "message": "missing whitespace after ','"},
+  "acceptable_fixes": ["add a space after the comma"] }

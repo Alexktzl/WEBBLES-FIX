@@ -1,0 +1,12 @@
+{
+  "description": "Wrong arg type passed to plus",
+  "language": "typescript",
+  "category": "BLOCKING",
+  "primary_error": {
+    "code": "TS2345",
+    "file": "main.ts",
+    "line": 2,
+    "error_class": "BLOCKING",
+    "message": "Argument of type 'string' is not assignable to parameter of type 'number'."
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "description": "[generated] E0609: no field `key` on type `Profile`",
+  "language": "rust",
+  "category": "BLOCKING",
+  "generated": true,
+  "primary_error": {
+    "code": "E0609",
+    "file": "src/main.rs",
+    "line": 4,
+    "error_class": "STRUCTURAL",
+    "message": "no field `key` on type `Profile`"
+  },
+  "acceptable_fixes": [
+    "see after/ for the canonical fix"
+  ],
+  "constraints_test": {
+    "expected_dont_contains": "add a new field"
+  },
+  "symbol_graph_test": {
+    "must_find_definition_of": "Profile"
+  }
+}

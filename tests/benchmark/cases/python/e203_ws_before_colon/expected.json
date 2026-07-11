@@ -1,0 +1,5 @@
+{ "description": "E203: whitespace before ':' in slice",
+  "language": "python", "category": "WARNING",
+  "primary_error": {"code": "E203", "file": "main.py", "line": 2,
+    "error_class": "WARNING", "message": "whitespace before ':'"},
+  "acceptable_fixes": ["remove the space before the colon"] }

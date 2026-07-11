@@ -1,0 +1,12 @@
+{
+  "description": "Missing package clause",
+  "language": "go",
+  "category": "CRITICAL_SYNTAX",
+  "primary_error": {
+    "code": "GO_SYNTAX",
+    "file": "main.go",
+    "line": 1,
+    "error_class": "CRITICAL_SYNTAX",
+    "message": "syntax error: unexpected func, expecting package"
+  }
+}

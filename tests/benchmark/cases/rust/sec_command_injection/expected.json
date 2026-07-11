@@ -1,0 +1,9 @@
+{
+  "description": "Shell command built from untrusted input",
+  "language": "rust", "category": "SECURITY",
+  "primary_error": {"code": "command_injection", "file": "src/main.rs", "line": 5,
+    "error_class": "SECURITY", "message": "shell command built from untrusted input"},
+  "acceptable_fixes": ["pass arguments without invoking a shell"],
+  "constraints_test": {"expected_do_contains": "without a shell",
+    "expected_dont_contains": "string concatenation"}
+}

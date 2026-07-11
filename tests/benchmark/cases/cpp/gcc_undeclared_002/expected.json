@@ -1,0 +1,12 @@
+{
+  "description": "Undeclared printf (missing cstdio)",
+  "language": "cpp",
+  "category": "BLOCKING",
+  "primary_error": {
+    "code": "GCC_UNDECLARED",
+    "file": "main.cpp",
+    "line": 2,
+    "error_class": "BLOCKING",
+    "message": "'printf' was not declared in this scope"
+  }
+}

@@ -1,0 +1,5 @@
+{ "description": "AssertionError: assert b != 0 fails when called with 0",
+  "language": "python", "category": "BLOCKING",
+  "primary_error": {"code": "AssertionError", "file": "main.py", "line": 2,
+    "error_class": "STRUCTURAL", "message": "assertion failed"},
+  "acceptable_fixes": ["handle b == 0 gracefully"] }

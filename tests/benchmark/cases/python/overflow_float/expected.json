@@ -1,0 +1,5 @@
+{ "description": "OverflowError: math range error for exp(1000)",
+  "language": "python", "category": "BLOCKING",
+  "primary_error": {"code": "OverflowError", "file": "main.py", "line": 4,
+    "error_class": "STRUCTURAL", "message": "math range error"},
+  "acceptable_fixes": ["catch OverflowError"] }

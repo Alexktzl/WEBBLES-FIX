@@ -1,0 +1,5 @@
+{ "description": "TypeError: int object is not callable (total() vs total)",
+  "language": "python", "category": "BLOCKING",
+  "primary_error": {"code": "TypeError", "file": "main.py", "line": 3,
+    "error_class": "STRUCTURAL", "message": "'int' object is not callable"},
+  "acceptable_fixes": ["remove the parentheses"] }

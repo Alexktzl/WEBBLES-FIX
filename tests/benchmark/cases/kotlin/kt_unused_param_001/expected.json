@@ -1,0 +1,12 @@
+{
+  "description": "Unused function parameter",
+  "language": "kotlin",
+  "category": "WARNING",
+  "primary_error": {
+    "code": "KT_UNUSED_PARAM",
+    "file": "Main.kt",
+    "line": 1,
+    "error_class": "WARNING",
+    "message": "parameter 'age' is never used"
+  }
+}

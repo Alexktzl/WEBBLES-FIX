@@ -1,0 +1,22 @@
+[
+  {
+    "file": "setup.py",
+    "line": 1,
+    "code": "import-not-found",
+    "message": "Cannot find implementation or library stub for module named \"numpy\"",
+    "verdict": "REAL_FIX",
+    "unsafe_accept": false,
+    "before_snippet": [
+      "from setuptools import setup, Extension",
+      "import numpy as np",
+      "",
+      "extensions = ["
+    ],
+    "after_snippet": [
+      "import numpy as np  # type: ignore[import-not-found]",
+      "from setuptools import Extension, setup",
+      "",
+      "extensions = ["
+    ]
+  }
+]

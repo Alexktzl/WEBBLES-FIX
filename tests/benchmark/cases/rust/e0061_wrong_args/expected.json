@@ -1,0 +1,13 @@
+{
+  "description": "E0061: function add takes 2 arguments but 1 was supplied",
+  "language": "rust",
+  "category": "BLOCKING",
+  "primary_error": {
+    "code": "E0061", "file": "src/main.rs", "line": 4,
+    "error_class": "STRUCTURAL",
+    "message": "this function takes 2 arguments but 1 argument was supplied. note: function `add` defined here"
+  },
+  "acceptable_fixes": ["pass the missing argument"],
+  "constraints_test": {"expected_dont_contains": "change the function signature"},
+  "symbol_graph_test": {"must_find_definition_of": "add"}
+}

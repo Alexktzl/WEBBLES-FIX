@@ -1,0 +1,9 @@
+{
+  "description": "E0412: cannot find type Confg (typo for Config)",
+  "language": "rust", "category": "BLOCKING",
+  "primary_error": {"code": "E0412", "file": "src/main.rs", "line": 2,
+    "error_class": "STRUCTURAL",
+    "message": "cannot find type `Confg` in this scope. help: a struct with a similar name exists: `Config`"},
+  "acceptable_fixes": ["fix typo Confg → Config"],
+  "symbol_graph_test": {"must_find_definition_of": "Config"}
+}

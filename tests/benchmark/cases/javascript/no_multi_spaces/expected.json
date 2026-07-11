@@ -1,0 +1,5 @@
+{ "description": "no-multi-spaces: multiple spaces around =",
+  "language": "javascript", "category": "WARNING",
+  "primary_error": {"code": "no-multi-spaces", "file": "main.js", "line": 2,
+    "error_class": "WARNING", "message": "Multiple spaces found"},
+  "acceptable_fixes": ["collapse to single space"] }

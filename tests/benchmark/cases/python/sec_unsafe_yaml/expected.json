@@ -1,0 +1,9 @@
+{
+  "description": "yaml.load on untrusted input (unsafe deserialization)",
+  "language": "python", "category": "SECURITY",
+  "primary_error": {"code": "unsafe_deserialization", "file": "main.py", "line": 5,
+    "error_class": "SECURITY", "message": "yaml.load on untrusted input is unsafe"},
+  "acceptable_fixes": ["use yaml.safe_load"],
+  "constraints_test": {"expected_do_contains": "safe_load",
+    "expected_dont_contains": "pickle"}
+}

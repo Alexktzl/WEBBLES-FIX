@@ -1,0 +1,12 @@
+{
+  "description": "Missing semicolon after assignment",
+  "language": "csharp",
+  "category": "CRITICAL_SYNTAX",
+  "primary_error": {
+    "code": "CS1002",
+    "file": "Program.cs",
+    "line": 3,
+    "error_class": "CRITICAL_SYNTAX",
+    "message": "; expected"
+  }
+}

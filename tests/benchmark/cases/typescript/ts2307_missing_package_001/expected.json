@@ -1,0 +1,12 @@
+{
+  "description": "Missing default export for lodash (needs * as)",
+  "language": "typescript",
+  "category": "BLOCKING",
+  "primary_error": {
+    "code": "TS2307",
+    "file": "main.ts",
+    "line": 1,
+    "error_class": "BLOCKING",
+    "message": "Cannot find module 'lodash' or its corresponding type declarations."
+  }
+}

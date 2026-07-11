@@ -1,0 +1,12 @@
+{
+  "description": "Deprecated Integer(int) constructor",
+  "language": "java",
+  "category": "WARNING",
+  "primary_error": {
+    "code": "JAVAC_DEPRECATED",
+    "file": "Main.java",
+    "line": 3,
+    "error_class": "WARNING",
+    "message": "Integer(int) in java.lang.Integer has been deprecated [deprecation]"
+  }
+}

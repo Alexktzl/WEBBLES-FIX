@@ -1,0 +1,5 @@
+{ "description": "W291: trailing whitespace",
+  "language": "python", "category": "WARNING",
+  "primary_error": {"code": "W291", "file": "main.py", "line": 2,
+    "error_class": "WARNING", "message": "trailing whitespace"},
+  "acceptable_fixes": ["strip trailing whitespace"] }

@@ -1,0 +1,12 @@
+{
+  "description": "Unknown type Foobar",
+  "language": "go",
+  "category": "BLOCKING",
+  "primary_error": {
+    "code": "GO_UNDEFINED",
+    "file": "main.go",
+    "line": 3,
+    "error_class": "BLOCKING",
+    "message": "undefined: Foobar"
+  }
+}

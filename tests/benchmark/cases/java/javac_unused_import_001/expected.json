@@ -1,0 +1,12 @@
+{
+  "description": "Unused import",
+  "language": "java",
+  "category": "CLEANUP",
+  "primary_error": {
+    "code": "JAVAC_UNUSED_IMPORT",
+    "file": "Main.java",
+    "line": 1,
+    "error_class": "CLEANUP",
+    "message": "import java.util.List is never used"
+  }
+}

@@ -1,0 +1,5 @@
+{ "description": "unreachable_code: statement after return",
+  "language": "rust", "category": "WARNING",
+  "primary_error": {"code": "unreachable_code", "file": "src/main.rs", "line": 3,
+    "error_class": "WARNING", "message": "unreachable statement"},
+  "acceptable_fixes": ["remove the unreachable statement or the early return"] }

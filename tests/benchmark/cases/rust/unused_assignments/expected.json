@@ -1,0 +1,8 @@
+{
+  "description": "unused_assignments: value assigned to x is never read",
+  "language": "rust", "category": "CLEANUP",
+  "primary_error": {"code": "unused_assignments", "file": "src/main.rs", "line": 3,
+    "error_class": "CLEANUP",
+    "message": "value assigned to `x` is never read"},
+  "acceptable_fixes": ["remove the dead assignment"]
+}

@@ -1,0 +1,9 @@
+{
+  "description": "E0765: unterminated double quote string",
+  "language": "rust", "category": "CRITICAL_SYNTAX",
+  "primary_error": {"code": "E0765", "file": "src/main.rs", "line": 2,
+    "error_class": "CRITICAL_SYNTAX",
+    "message": "unterminated double quote string"},
+  "acceptable_fixes": ["close the string literal"],
+  "constraints_test": {"expected_do_contains": "Close the string"}
+}

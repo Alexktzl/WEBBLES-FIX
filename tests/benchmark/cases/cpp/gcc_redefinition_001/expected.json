@@ -1,0 +1,12 @@
+{
+  "description": "Variable x redefined at global scope",
+  "language": "cpp",
+  "category": "BLOCKING",
+  "primary_error": {
+    "code": "GCC_REDEFINITION",
+    "file": "main.cpp",
+    "line": 2,
+    "error_class": "BLOCKING",
+    "message": "redefinition of 'int x'"
+  }
+}

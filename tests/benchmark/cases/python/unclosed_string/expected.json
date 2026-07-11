@@ -1,0 +1,11 @@
+{
+  "description": "SyntaxError: unterminated string literal",
+  "language": "python",
+  "category": "CRITICAL_SYNTAX",
+  "primary_error": {
+    "code": "SyntaxError", "file": "main.py", "line": 2,
+    "error_class": "CRITICAL_SYNTAX",
+    "message": "unterminated string literal"
+  },
+  "acceptable_fixes": ["close the string with matching quote"]
+}

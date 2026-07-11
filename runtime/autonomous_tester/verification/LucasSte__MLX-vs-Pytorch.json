@@ -1,0 +1,29 @@
+[
+  {
+    "file": "mlx_models\\tiny_bert.py",
+    "line": 9,
+    "code": "import-not-found",
+    "message": "Cannot find implementation or library stub for module named \"transformers\"",
+    "verdict": "STILL_FLAGGED",
+    "unsafe_accept": false,
+    "semantic_suspicious_change": [],
+    "before_snippet": [
+      "from torch.utils.data import DataLoader",
+      "",
+      "import mlx.nn as nn",
+      "import mlx.core as mx",
+      "",
+      "from pytorch_models.tiny_bert import Config",
+      ""
+    ],
+    "after_snippet": [
+      "import numpy as np",
+      "from pytorch_models.tiny_bert import Config",
+      "from torch.utils.data import DataLoader",
+      "from transformers import AutoTokenizer  # type: ignore[import-not-found]",
+      "",
+      "",
+      "class LayerNorm(nn.Module):"
+    ]
+  }
+]

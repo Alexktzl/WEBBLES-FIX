@@ -1,0 +1,19 @@
+{
+  "cycle": "run10_post_validation",
+  "series_n": 10,
+  "total_projects": 10,
+  "pass": 9,
+  "empty": 0,
+  "partial": 0,
+  "fail": 1,
+  "total_errors_found": 10553,
+  "total_accepted": 11,
+  "total_needs_review": 30,
+  "total_rejected": 6,
+  "consecutive_fail": 0,
+  "series_status": "complete",
+  "clones_deleted": 10,
+  "started_at": "2026-06-14T04:43:23.607349",
+  "last_updated": "2026-06-14T05:44:49.942920",
+  "effective_pass_rate": 0.9
+}

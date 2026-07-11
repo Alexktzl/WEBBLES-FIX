@@ -1,0 +1,5 @@
+{ "description": "E225: missing whitespace around arithmetic operator",
+  "language": "python", "category": "WARNING",
+  "primary_error": {"code": "E225", "file": "main.py", "line": 2,
+    "error_class": "WARNING", "message": "missing whitespace around operator"},
+  "acceptable_fixes": ["add spaces around +"] }

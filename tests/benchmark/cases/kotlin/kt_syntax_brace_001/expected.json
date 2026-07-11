@@ -1,0 +1,12 @@
+{
+  "description": "Missing closing brace",
+  "language": "kotlin",
+  "category": "CRITICAL_SYNTAX",
+  "primary_error": {
+    "code": "KT_SYNTAX",
+    "file": "Main.kt",
+    "line": 3,
+    "error_class": "CRITICAL_SYNTAX",
+    "message": "expecting '}'"
+  }
+}

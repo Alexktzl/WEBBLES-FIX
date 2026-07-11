@@ -1,0 +1,11 @@
+{
+  "description": "IndexError: list index 2 out of range for length-2 list",
+  "language": "python",
+  "category": "BLOCKING",
+  "primary_error": {
+    "code": "IndexError", "file": "main.py", "line": 2,
+    "error_class": "STRUCTURAL",
+    "message": "list index out of range"
+  },
+  "acceptable_fixes": ["bounds-check before access", "return None when out of range"]
+}

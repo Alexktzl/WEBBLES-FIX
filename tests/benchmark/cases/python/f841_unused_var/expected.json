@@ -1,0 +1,11 @@
+{
+  "description": "F841: local variable 'result' assigned but never used",
+  "language": "python",
+  "category": "CLEANUP",
+  "primary_error": {
+    "code": "F841", "file": "main.py", "line": 2,
+    "error_class": "CLEANUP",
+    "message": "local variable 'result' is assigned to but never used"
+  },
+  "acceptable_fixes": ["remove the unused assignment"]
+}

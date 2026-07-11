@@ -1,0 +1,19 @@
+{
+  "description": "[generated] unused_variable: unused variable: `offset`",
+  "language": "rust",
+  "category": "CLEANUP",
+  "generated": true,
+  "primary_error": {
+    "code": "unused_variable",
+    "file": "src/main.rs",
+    "line": 2,
+    "error_class": "CLEANUP",
+    "message": "unused variable: `offset`"
+  },
+  "acceptable_fixes": [
+    "see after/ for the canonical fix"
+  ],
+  "constraints_test": {
+    "expected_do_contains": "Prefix the binding with"
+  }
+}

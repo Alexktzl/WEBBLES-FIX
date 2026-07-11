@@ -1,0 +1,90 @@
+[
+  {
+    "file": "arclet\\entari\\__init__.py",
+    "line": 1,
+    "code": "import-not-found",
+    "message": "Cannot find implementation or library stub for module named \"arclet.letoderea\"",
+    "verdict": "STILL_FLAGGED",
+    "before_snippet": [
+      "from arclet.letoderea import Depends as Depends",
+      "from arclet.letoderea import bind as bind",
+      "from arclet.letoderea import depends as depends",
+      "from arclet.letoderea import deref as deref"
+    ],
+    "after_snippet": [
+      "from arclet.letoderea import use as use  # type: ignore[import-not-found]",
+      "from satori import Audio as Audio",
+      "from satori import E as E",
+      "from satori import Login as Login"
+    ]
+  },
+  {
+    "file": "arclet\\entari\\config\\models\\default.py",
+    "line": 169,
+    "code": "F821",
+    "message": "undefined name 'fields'",
+    "verdict": "REAL_FIX",
+    "before_snippet": [
+      "            return datetime.fromtimestamp(value)",
+      "        return datetime.fromisoformat(value)",
+      "    elif tp is date:",
+      "        if isinstance(value, (int, float)):  # noqa: UP038",
+      "            return date.fromtimestamp(value)",
+      "        return date.fromisoformat(value)",
+      "    elif generic_isinstance(value, tp):"
+    ],
+    "after_snippet": [
+      "    result = {}",
+      "    types_namespace = merge_cls_and_parent_ns(cls_)",
+      "",
+      "    for field_ in field(cls_):",
+      "        if field_.name not in namespace:",
+      "            continue",
+      ""
+    ]
+  },
+  {
+    "file": "arclet\\entari\\config\\models\\default.py",
+    "line": 201,
+    "code": "F821",
+    "message": "undefined name 'fields'",
+    "verdict": "STILL_FLAGGED",
+    "before_snippet": [
+      "        validated_value = _validate_single_value(value, tp)",
+      "        result[field_.name] = validated_value",
+      "",
+      "    return cls_(**result)",
+      "",
+      "",
+      "class BasicConfModelAction(ConfigModelAction[BasicConfModel]):"
+    ],
+    "after_snippet": [
+      "        return asdict(obj)  # type: ignore",
+      "",
+      "    @classmethod",
+      "    def keys(cls, obj: BasicConfModel) -> list[str]:",
+      "        return [field_.name for field_ in field(obj)]  # type: ignore",
+      "",
+      "    @classmethod"
+    ]
+  },
+  {
+    "file": "arclet\\entari\\__init__.py",
+    "line": 1,
+    "code": "import-not-found",
+    "message": "Cannot find implementation or library stub for module named \"arclet.letoderea\"",
+    "verdict": "STILL_FLAGGED",
+    "before_snippet": [
+      "from arclet.letoderea import Depends as Depends",
+      "from arclet.letoderea import bind as bind",
+      "from arclet.letoderea import depends as depends",
+      "from arclet.letoderea import deref as deref"
+    ],
+    "after_snippet": [
+      "from arclet.letoderea import use as use  # type: ignore[import-not-found]",
+      "from satori import Audio as Audio",
+      "from satori import E as E",
+      "from satori import Login as Login"
+    ]
+  }
+]

@@ -1,0 +1,5 @@
+{ "description": "E741: ambiguous variable name l",
+  "language": "python", "category": "WARNING",
+  "primary_error": {"code": "E741", "file": "main.py", "line": 2,
+    "error_class": "WARNING", "message": "ambiguous variable name 'l'"},
+  "acceptable_fixes": ["rename l to a descriptive name"] }

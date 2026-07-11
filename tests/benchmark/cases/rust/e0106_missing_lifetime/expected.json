@@ -1,0 +1,8 @@
+{
+  "description": "E0106: missing lifetime specifier on reference field",
+  "language": "rust", "category": "BLOCKING",
+  "primary_error": {"code": "E0106", "file": "src/main.rs", "line": 2,
+    "error_class": "STRUCTURAL",
+    "message": "missing lifetime specifier"},
+  "acceptable_fixes": ["add a lifetime parameter to the struct"]
+}

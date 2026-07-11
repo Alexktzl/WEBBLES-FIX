@@ -1,0 +1,5 @@
+{ "description": "E0614: type i32 cannot be dereferenced",
+  "language": "rust", "category": "BLOCKING",
+  "primary_error": {"code": "E0614", "file": "src/main.rs", "line": 3,
+    "error_class": "STRUCTURAL", "message": "type `{integer}` cannot be dereferenced"},
+  "acceptable_fixes": ["remove the dereference operator"] }

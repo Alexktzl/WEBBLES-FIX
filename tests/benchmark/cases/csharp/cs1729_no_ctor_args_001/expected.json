@@ -1,0 +1,12 @@
+{
+  "description": "Wrong constructor arity",
+  "language": "csharp",
+  "category": "BLOCKING",
+  "primary_error": {
+    "code": "CS1729",
+    "file": "Program.cs",
+    "line": 3,
+    "error_class": "BLOCKING",
+    "message": "'StringBuilder' does not contain a constructor that takes 5 arguments"
+  }
+}

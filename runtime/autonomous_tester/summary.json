@@ -1,0 +1,22 @@
+{
+  "series_n": 5,
+  "total_projects": 5,
+  "pass": 3,
+  "empty": 0,
+  "partial": 1,
+  "fail": 1,
+  "total_errors_found": 1929,
+  "total_accepted": 6,
+  "total_needs_review": 8,
+  "total_rejected": 11,
+  "consecutive_fail": 0,
+  "series_status": "completed",
+  "clones_deleted": 5,
+  "last_updated": "2026-06-23T22:23:30.843175",
+  "total_verified_real_fix_strong": 2,
+  "total_verified_real_fix_weak_by_design": 3,
+  "total_verified_real_fix_weak_concerning": 0,
+  "total_verified_still_flagged": 1,
+  "total_verified_unsafe_accept": 0,
+  "effective_pass_rate": 0.6
+}

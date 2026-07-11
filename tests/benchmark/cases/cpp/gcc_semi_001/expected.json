@@ -1,0 +1,12 @@
+{
+  "description": "Missing semicolon after declaration",
+  "language": "cpp",
+  "category": "CRITICAL_SYNTAX",
+  "primary_error": {
+    "code": "GCC_SEMI",
+    "file": "main.cpp",
+    "line": 2,
+    "error_class": "CRITICAL_SYNTAX",
+    "message": "expected ';' before 'return'"
+  }
+}

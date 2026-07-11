@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Webbles Fix</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="app">
+
+<!-- SCREEN 1 -->
+<section class="screen active" id="s1">
+  <div class="logo">W</div>
+
+  <h1>Webbles Fix</h1>
+  <div class="subtitle">AI автоисправление кода</div>
+
+  <div class="desc">
+    Анализирует проект, находит ошибки и генерирует исправления в реальном времени.
+  </div>
+
+  <button class="btn" onclick="go(2)">Начать</button>
+</section>
+
+<!-- SCREEN 2 -->
+<section class="screen" id="s2">
+  <h2>Загрузка проекта</h2>
+
+  <div class="upload" onclick="selectFolder()">
+    <div class="folder">📁</div>
+    <div id="projectPath">Выбери папку проекта</div>
+  </div>
+
+  <div class="row">
+    <button class="btn secondary" onclick="go(1)">Назад</button>
+    <button class="btn" onclick="go(3)">Далее</button>
+  </div>
+</section>
+
+<!-- SCREEN 3 -->
+<section class="screen" id="s3">
+  <h2>Язык проекта</h2>
+
+  <div class="langs">
+    <div class="lang active" onclick="selectLang(this)">Rust</div>
+    <div class="lang" onclick="selectLang(this)">Python</div>
+    <div class="lang" onclick="selectLang(this)">JS</div>
+    <div class="lang" onclick="selectLang(this)">TS</div>
+  </div>
+
+  <div class="row">
+    <button class="btn secondary" onclick="go(2)">Назад</button>
+    <button class="btn" onclick="startPipeline()">Запуск</button>
+  </div>
+</section>
+
+<!-- SCREEN 4 -->
+<section class="screen" id="s4">
+  <h2>AI исправление</h2>
+
+  <div class="status" id="status">Ожидание...</div>
+
+  <div class="layout">
+    <div class="panel">
+      <div class="panel-title">Код</div>
+      <pre id="originalCode">// исходный код</pre>
+    </div>
+
+    <div class="panel fixed">
+      <div class="panel-title">Исправления</div>
+      <pre id="fixedCode">// AI исправления</pre>
+    </div>
+  </div>
+
+  <div class="glow-line"></div>
+</section>
+
+</div>
+
+<script src="script.js"></script>
+<script src="/eel.js"></script>
+
+</body>
+</html>

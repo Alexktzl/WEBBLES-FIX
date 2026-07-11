@@ -1,0 +1,8 @@
+{
+  "description": "UnboundLocalError: count referenced before assignment",
+  "language": "python", "category": "BLOCKING",
+  "primary_error": {"code": "UnboundLocalError", "file": "main.py", "line": 2,
+    "error_class": "STRUCTURAL",
+    "message": "local variable 'count' referenced before assignment"},
+  "acceptable_fixes": ["initialize count", "pass as parameter"]
+}

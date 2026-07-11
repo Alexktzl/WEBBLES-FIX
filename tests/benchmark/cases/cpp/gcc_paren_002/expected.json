@@ -1,0 +1,12 @@
+{
+  "description": "Missing closing paren in if condition",
+  "language": "cpp",
+  "category": "CRITICAL_SYNTAX",
+  "primary_error": {
+    "code": "GCC_PAREN",
+    "file": "main.cpp",
+    "line": 3,
+    "error_class": "CRITICAL_SYNTAX",
+    "message": "expected ')' before '{' token"
+  }
+}

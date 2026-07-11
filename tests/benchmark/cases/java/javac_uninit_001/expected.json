@@ -1,0 +1,12 @@
+{
+  "description": "Use of uninitialised local variable",
+  "language": "java",
+  "category": "BLOCKING",
+  "primary_error": {
+    "code": "JAVAC_UNINIT",
+    "file": "Main.java",
+    "line": 4,
+    "error_class": "BLOCKING",
+    "message": "variable x might not have been initialized"
+  }
+}

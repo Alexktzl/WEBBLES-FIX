@@ -1,0 +1,12 @@
+{
+  "description": "Wrong argument count",
+  "language": "go",
+  "category": "BLOCKING",
+  "primary_error": {
+    "code": "GO_ARGS",
+    "file": "main.go",
+    "line": 4,
+    "error_class": "BLOCKING",
+    "message": "not enough arguments in call to plus"
+  }
+}

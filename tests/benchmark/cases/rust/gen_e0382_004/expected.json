@@ -1,0 +1,19 @@
+{
+  "description": "[generated] E0382: borrow of moved value: `cache`",
+  "language": "rust",
+  "category": "BLOCKING",
+  "generated": true,
+  "primary_error": {
+    "code": "E0382",
+    "file": "src/main.rs",
+    "line": 5,
+    "error_class": "OWNERSHIP",
+    "message": "borrow of moved value: `cache`"
+  },
+  "acceptable_fixes": [
+    "see after/ for the canonical fix"
+  ],
+  "constraints_test": {
+    "expected_dont_contains": "unsafe"
+  }
+}

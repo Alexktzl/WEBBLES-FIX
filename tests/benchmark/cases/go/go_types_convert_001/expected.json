@@ -1,0 +1,12 @@
+{
+  "description": "Float-to-int needs explicit conversion",
+  "language": "go",
+  "category": "BLOCKING",
+  "primary_error": {
+    "code": "GO_TYPES",
+    "file": "main.go",
+    "line": 3,
+    "error_class": "BLOCKING",
+    "message": "cannot use 1.5 (untyped float constant) as int value"
+  }
+}

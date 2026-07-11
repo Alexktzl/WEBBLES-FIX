@@ -1,0 +1,12 @@
+{
+  "description": "Wrong argument type",
+  "language": "csharp",
+  "category": "BLOCKING",
+  "primary_error": {
+    "code": "CS1503",
+    "file": "Program.cs",
+    "line": 4,
+    "error_class": "BLOCKING",
+    "message": "Argument 1: cannot convert from 'string' to 'int'"
+  }
+}

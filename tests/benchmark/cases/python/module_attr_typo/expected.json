@@ -1,0 +1,5 @@
+{ "description": "AttributeError: os.getcdw typo for os.getcwd",
+  "language": "python", "category": "BLOCKING",
+  "primary_error": {"code": "AttributeError", "file": "main.py", "line": 4,
+    "error_class": "STRUCTURAL", "message": "module 'os' has no attribute 'getcdw'"},
+  "acceptable_fixes": ["fix typo getcdw -> getcwd"] }

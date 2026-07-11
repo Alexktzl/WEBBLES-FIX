@@ -1,0 +1,12 @@
+{
+  "description": "Missing closing braces",
+  "language": "typescript",
+  "category": "CRITICAL_SYNTAX",
+  "primary_error": {
+    "code": "TS1005",
+    "file": "main.ts",
+    "line": 4,
+    "error_class": "CRITICAL_SYNTAX",
+    "message": "'}' expected."
+  }
+}

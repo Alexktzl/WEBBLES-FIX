@@ -1,0 +1,11 @@
+{
+  "description": "KeyError: typo 'nme' vs 'name'",
+  "language": "python",
+  "category": "BLOCKING",
+  "primary_error": {
+    "code": "KeyError", "file": "main.py", "line": 2,
+    "error_class": "STRUCTURAL",
+    "message": "'nme'"
+  },
+  "acceptable_fixes": ["fix typo nme → name"]
+}

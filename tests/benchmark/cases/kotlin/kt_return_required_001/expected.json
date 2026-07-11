@@ -1,0 +1,12 @@
+{
+  "description": "Missing return on else path",
+  "language": "kotlin",
+  "category": "BLOCKING",
+  "primary_error": {
+    "code": "KT_RETURN",
+    "file": "Main.kt",
+    "line": 1,
+    "error_class": "BLOCKING",
+    "message": "a 'return' expression required in a function with a block body"
+  }
+}

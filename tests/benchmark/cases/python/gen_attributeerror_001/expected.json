@@ -1,0 +1,16 @@
+{
+  "description": "[generated] AttributeError: 'str' object has no attribute 'proc_x'",
+  "language": "python",
+  "category": "BLOCKING",
+  "generated": true,
+  "primary_error": {
+    "code": "AttributeError",
+    "file": "main.py",
+    "line": 2,
+    "error_class": "STRUCTURAL",
+    "message": "'str' object has no attribute 'proc_x'"
+  },
+  "acceptable_fixes": [
+    "see after/ for the canonical fix"
+  ]
+}

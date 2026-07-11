@@ -1,0 +1,11 @@
+{
+  "description": "SyntaxError: missing colon after def signature",
+  "language": "python",
+  "category": "CRITICAL_SYNTAX",
+  "primary_error": {
+    "code": "SyntaxError", "file": "main.py", "line": 1,
+    "error_class": "CRITICAL_SYNTAX",
+    "message": "expected ':'"
+  },
+  "acceptable_fixes": ["add : after )"]
+}

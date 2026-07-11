@@ -1,0 +1,12 @@
+{
+  "description": "Missing closing paren in if",
+  "language": "java",
+  "category": "CRITICAL_SYNTAX",
+  "primary_error": {
+    "code": "JAVAC_PAREN",
+    "file": "Main.java",
+    "line": 3,
+    "error_class": "CRITICAL_SYNTAX",
+    "message": "')' expected"
+  }
+}

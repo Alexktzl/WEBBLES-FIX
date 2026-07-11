@@ -1,0 +1,12 @@
+{
+  "description": "Deprecated API usage",
+  "language": "kotlin",
+  "category": "WARNING",
+  "primary_error": {
+    "code": "KT_DEPRECATED",
+    "file": "Main.kt",
+    "line": 4,
+    "error_class": "WARNING",
+    "message": "'foo' is deprecated. use bar()"
+  }
+}

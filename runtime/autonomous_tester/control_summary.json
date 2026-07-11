@@ -1,0 +1,19 @@
+{
+  "series_type": "control_IMP-1",
+  "imp_id": "IMP-1",
+  "total_projects": 0,
+  "pass": 0,
+  "empty": 0,
+  "partial": 0,
+  "fail": 0,
+  "total_errors_found": 0,
+  "total_accepted": 0,
+  "total_needs_review": 0,
+  "total_rejected": 0,
+  "consecutive_fail": 0,
+  "clones_deleted": 0,
+  "series_status": "running",
+  "projects": [],
+  "started_at": "2026-06-12T22:48:43.460166",
+  "last_updated": "2026-06-12T22:48:43.460166"
+}

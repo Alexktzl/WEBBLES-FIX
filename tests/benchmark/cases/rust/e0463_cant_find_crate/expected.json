@@ -1,0 +1,8 @@
+{
+  "description": "E0463: cant find crate for nonexistent_crate",
+  "language": "rust", "category": "BLOCKING",
+  "primary_error": {"code": "E0463", "file": "src/main.rs", "line": 1,
+    "error_class": "BUILD_SCRIPT",
+    "message": "cant find crate for `nonexistent_crate`"},
+  "acceptable_fixes": ["remove the extern crate or add dependency"]
+}

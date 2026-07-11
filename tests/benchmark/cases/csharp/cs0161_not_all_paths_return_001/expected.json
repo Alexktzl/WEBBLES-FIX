@@ -1,0 +1,12 @@
+{
+  "description": "Missing return on else path",
+  "language": "csharp",
+  "category": "BLOCKING",
+  "primary_error": {
+    "code": "CS0161",
+    "file": "Program.cs",
+    "line": 2,
+    "error_class": "BLOCKING",
+    "message": "'P.M(int)': not all code paths return a value"
+  }
+}

@@ -1,0 +1,5 @@
+{ "description": "TypeError: int object is not subscriptable",
+  "language": "python", "category": "BLOCKING",
+  "primary_error": {"code": "TypeError", "file": "main.py", "line": 2,
+    "error_class": "STRUCTURAL", "message": "'int' object is not subscriptable"},
+  "acceptable_fixes": ["convert to str before subscripting"] }

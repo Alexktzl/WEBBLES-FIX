@@ -1,0 +1,12 @@
+{
+  "description": "Missing #include <vector>",
+  "language": "cpp",
+  "category": "BLOCKING",
+  "primary_error": {
+    "code": "GCC_INCLUDE",
+    "file": "main.cpp",
+    "line": 2,
+    "error_class": "BLOCKING",
+    "message": "'vector' is not a member of 'std'"
+  }
+}

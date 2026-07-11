@@ -1,0 +1,12 @@
+{
+  "description": "Undeclared variable y",
+  "language": "java",
+  "category": "BLOCKING",
+  "primary_error": {
+    "code": "JAVAC_SYMBOL",
+    "file": "Main.java",
+    "line": 3,
+    "error_class": "BLOCKING",
+    "message": "cannot find symbol: variable y"
+  }
+}

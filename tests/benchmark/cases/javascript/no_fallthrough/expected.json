@@ -1,0 +1,7 @@
+{
+  "description": "no-fallthrough: case 2 falls through to default",
+  "language": "javascript", "category": "WARNING",
+  "primary_error": {"code": "no-fallthrough", "file": "main.js", "line": 6,
+    "error_class": "WARNING", "message": "Expected a 'break' statement before 'default'"},
+  "acceptable_fixes": ["add break before default"]
+}

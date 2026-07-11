@@ -1,0 +1,12 @@
+{
+  "description": "Trailing whitespace cleanup",
+  "language": "go",
+  "category": "CLEANUP",
+  "primary_error": {
+    "code": "GO_TRAILING_WS",
+    "file": "main.go",
+    "line": 1,
+    "error_class": "CLEANUP",
+    "message": "trailing whitespace at end of line"
+  }
+}

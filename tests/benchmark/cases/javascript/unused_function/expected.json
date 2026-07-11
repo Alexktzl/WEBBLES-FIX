@@ -1,0 +1,11 @@
+{
+  "description": "no-unused-vars: helper function declared but never called",
+  "language": "javascript",
+  "category": "CLEANUP",
+  "primary_error": {
+    "code": "no-unused-vars", "file": "main.js", "line": 1,
+    "error_class": "CLEANUP",
+    "message": "'helper' is defined but never used"
+  },
+  "acceptable_fixes": ["remove the unused helper function"]
+}

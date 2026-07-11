@@ -1,0 +1,5 @@
+{ "description": "ValueError: too many values to unpack",
+  "language": "python", "category": "BLOCKING",
+  "primary_error": {"code": "ValueError", "file": "main.py", "line": 2,
+    "error_class": "STRUCTURAL", "message": "too many values to unpack (expected 2)"},
+  "acceptable_fixes": ["match the number of targets to values"] }

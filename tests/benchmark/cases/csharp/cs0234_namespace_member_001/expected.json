@@ -1,0 +1,12 @@
+{
+  "description": "Non-existent namespace member",
+  "language": "csharp",
+  "category": "BLOCKING",
+  "primary_error": {
+    "code": "CS0234",
+    "file": "Program.cs",
+    "line": 4,
+    "error_class": "BLOCKING",
+    "message": "The type or namespace name 'Foobar' does not exist in the namespace 'System'"
+  }
+}

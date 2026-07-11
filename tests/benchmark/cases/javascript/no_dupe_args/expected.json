@@ -1,0 +1,5 @@
+{ "description": "no-dupe-args: duplicate parameter name a",
+  "language": "javascript", "category": "BLOCKING",
+  "primary_error": {"code": "no-dupe-args", "file": "main.js", "line": 1,
+    "error_class": "STRUCTURAL", "message": "Duplicate param 'a'"},
+  "acceptable_fixes": ["rename the duplicate parameter"] }

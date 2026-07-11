@@ -1,0 +1,7 @@
+{
+  "description": "ValueError: invalid literal for int()",
+  "language": "python", "category": "BLOCKING",
+  "primary_error": {"code": "ValueError", "file": "main.py", "line": 2,
+    "error_class": "STRUCTURAL", "message": "invalid literal for int() with base 10: 'abc'"},
+  "acceptable_fixes": ["wrap in try/except", "validate input"]
+}

@@ -1,0 +1,29 @@
+# Lock-файл для requirements.txt — точные версии, известные как РАБОЧИЕ в
+# среде разработки на момент tech debt audit 2026-06-21 (находка #9).
+#
+# requirements.txt сознательно использует >= без верхних границ — это
+# намеренно (см. requirements.txt), верхние границы наугад без проверки
+# совместимости рискованнее, чем их отсутствие. Этот файл — снимок ИЗВЕСТНО
+# РАБОЧЕГО набора версий для воспроизводимости, НЕ замена requirements.txt.
+#
+# Использование: pip install -r requirements.lock.txt — если после
+# обновления окружения что-то ломается, можно откатиться к этому снимку.
+# Перегенерировать после следующего намеренного обновления зависимостей:
+#   pip install -r requirements.txt && pip freeze | grep -iFf <(sed 's/[<>=].*//' requirements.txt) > requirements.lock.txt
+
+unidiff==0.7.5
+openai==2.41.0
+anthropic==0.109.1
+requests==2.34.2
+python-telegram-bot==22.7
+duckduckgo-search==8.1.1
+tomlkit==0.15.0
+python-dotenv==1.2.2
+eel==0.18.2
+hypothesis==6.155.2
+semgrep==1.165.0
+flake8==7.3.0
+mypy==2.1.0
+ruff==0.15.16
+bandit==1.9.4
+pip-audit==2.10.0

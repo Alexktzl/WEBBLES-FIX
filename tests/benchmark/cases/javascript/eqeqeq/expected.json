@@ -1,0 +1,11 @@
+{
+  "description": "ESLint eqeqeq: use === instead of ==",
+  "language": "javascript",
+  "category": "WARNING",
+  "primary_error": {
+    "code": "eqeqeq", "file": "main.js", "line": 2,
+    "error_class": "WARNING",
+    "message": "Expected '===' and instead saw '=='"
+  },
+  "acceptable_fixes": ["replace == with ==="]
+}

@@ -1,0 +1,5 @@
+{ "description": "no-lonely-if: lone if inside else should be else-if",
+  "language": "javascript", "category": "WARNING",
+  "primary_error": {"code": "no-lonely-if", "file": "main.js", "line": 5,
+    "error_class": "WARNING", "message": "Unexpected if as the only statement in an else block"},
+  "acceptable_fixes": ["combine into else if"] }

@@ -1,0 +1,5 @@
+{ "description": "no-sparse-arrays: hole in array literal",
+  "language": "javascript", "category": "WARNING",
+  "primary_error": {"code": "no-sparse-arrays", "file": "main.js", "line": 1,
+    "error_class": "WARNING", "message": "Unexpected comma in middle of array"},
+  "acceptable_fixes": ["fill the array hole"] }

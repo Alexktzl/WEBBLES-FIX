@@ -1,0 +1,12 @@
+{
+  "description": "Undeclared variable y",
+  "language": "kotlin",
+  "category": "BLOCKING",
+  "primary_error": {
+    "code": "KT_UNRESOLVED",
+    "file": "Main.kt",
+    "line": 2,
+    "error_class": "BLOCKING",
+    "message": "unresolved reference: y"
+  }
+}

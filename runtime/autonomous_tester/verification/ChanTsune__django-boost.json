@@ -1,0 +1,19 @@
+[
+  {
+    "file": "example\\views\\__init__.py",
+    "line": 100,
+    "code": "assignment",
+    "message": "Incompatible types in assignment (expression has type \"list[Never]\", base class \"AllowContentTypeMixin\" defined the type as \"None\")",
+    "verdict": "STILL_FLAGGED",
+    "unsafe_accept": false,
+    "before_snippet": [
+      "    template_name = \"example/index.html\"",
+      "    allowed_content_types = []"
+    ],
+    "after_snippet": [
+      "class ContentTypeView(AllowContentTypeMixin, TemplateView):",
+      "    template_name = \"example/index.html\"",
+      "    allowed_content_types: list = []"
+    ]
+  }
+]

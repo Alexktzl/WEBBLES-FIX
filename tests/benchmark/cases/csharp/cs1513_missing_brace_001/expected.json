@@ -1,0 +1,12 @@
+{
+  "description": "Missing closing braces",
+  "language": "csharp",
+  "category": "CRITICAL_SYNTAX",
+  "primary_error": {
+    "code": "CS1513",
+    "file": "Program.cs",
+    "line": 4,
+    "error_class": "CRITICAL_SYNTAX",
+    "message": "} expected"
+  }
+}

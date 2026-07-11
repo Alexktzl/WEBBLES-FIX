@@ -1,0 +1,12 @@
+{
+  "description": "Undeclared variable y",
+  "language": "go",
+  "category": "BLOCKING",
+  "primary_error": {
+    "code": "GO_UNDEFINED",
+    "file": "main.go",
+    "line": 4,
+    "error_class": "BLOCKING",
+    "message": "undefined: y"
+  }
+}

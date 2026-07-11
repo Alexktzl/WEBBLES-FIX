@@ -1,0 +1,12 @@
+{
+  "description": "Unused local variable",
+  "language": "go",
+  "category": "CLEANUP",
+  "primary_error": {
+    "code": "GO_UNUSED_VAR",
+    "file": "main.go",
+    "line": 3,
+    "error_class": "CLEANUP",
+    "message": "x declared and not used"
+  }
+}

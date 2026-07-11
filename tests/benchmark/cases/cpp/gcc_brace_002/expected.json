@@ -1,0 +1,12 @@
+{
+  "description": "Missing inner closing brace",
+  "language": "cpp",
+  "category": "CRITICAL_SYNTAX",
+  "primary_error": {
+    "code": "GCC_BRACE",
+    "file": "main.cpp",
+    "line": 4,
+    "error_class": "CRITICAL_SYNTAX",
+    "message": "expected '}' to match '{'"
+  }
+}

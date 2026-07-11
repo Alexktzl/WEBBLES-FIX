@@ -1,0 +1,128 @@
+[
+  {
+    "file": "automaton\\machines.py",
+    "line": 19,
+    "code": "import-not-found",
+    "message": "Cannot find implementation or library stub for module named \"prettytable\"",
+    "verdict": "REAL_FIX",
+    "unsafe_accept": false,
+    "semantic_suspicious_change": [],
+    "before_snippet": [
+      "from collections.abc import Callable, Generator, Mapping, Sequence",
+      "from typing import Any, Protocol, TypedDict",
+      "",
+      "import prettytable",
+      "from typing_extensions import NotRequired, Self",
+      "",
+      "from automaton import _utils as utils"
+    ],
+    "after_snippet": [
+      "from collections.abc import Callable, Generator, Mapping, Sequence",
+      "from typing import Any, Protocol, TypedDict",
+      "",
+      "import prettytable  # type: ignore[import-not-found]",
+      "from typing_extensions import NotRequired, Self",
+      "",
+      "from automaton import _utils as utils"
+    ],
+    "strength": "weak",
+    "weak_markers": [
+      "type_ignore_comment"
+    ],
+    "weak_category": "by_design"
+  },
+  {
+    "file": "automaton\\converters\\pydot.py",
+    "line": 21,
+    "code": "import-not-found",
+    "message": "Cannot find implementation or library stub for module named \"pydot\"",
+    "verdict": "REAL_FIX",
+    "unsafe_accept": false,
+    "semantic_suspicious_change": [],
+    "before_snippet": [
+      "from automaton import machines",
+      "",
+      "try:",
+      "    import pydot",
+      "",
+      "    PYDOT_AVAILABLE = True",
+      "except ImportError:"
+    ],
+    "after_snippet": [
+      "from automaton import machines",
+      "",
+      "try:",
+      "    import pydot  # type: ignore[import-not-found]",
+      "",
+      "    PYDOT_AVAILABLE = True",
+      "except ImportError:"
+    ],
+    "strength": "weak",
+    "weak_markers": [
+      "type_ignore_comment"
+    ],
+    "weak_category": "by_design"
+  },
+  {
+    "file": "automaton\\tests\\test_fsm.py",
+    "line": 23,
+    "code": "import-not-found",
+    "message": "Cannot find implementation or library stub for module named \"testtools\"",
+    "verdict": "REAL_FIX",
+    "unsafe_accept": false,
+    "semantic_suspicious_change": [],
+    "before_snippet": [
+      "from automaton import machines",
+      "from automaton import runners",
+      "",
+      "from testtools import testcase",
+      "",
+      "",
+      "class FSMTest(testcase.TestCase):"
+    ],
+    "after_snippet": [
+      "from automaton import machines",
+      "from automaton import runners",
+      "",
+      "from testtools import testcase  # type: ignore[import-not-found]",
+      "",
+      "",
+      "class FSMTest(testcase.TestCase):"
+    ],
+    "strength": "weak",
+    "weak_markers": [
+      "type_ignore_comment"
+    ],
+    "weak_category": "by_design"
+  },
+  {
+    "file": "automaton\\tests\\test_fsm.py",
+    "line": 32,
+    "code": "misc",
+    "message": "Property \"default_start_state\" defined in \"FiniteMachine\" is read-only",
+    "verdict": "REAL_FIX",
+    "unsafe_accept": false,
+    "semantic_suspicious_change": [],
+    "before_snippet": [
+      "        m = machines.FiniteMachine()",
+      "        if add_start:",
+      "            m.add_state(start_state)",
+      "            m.default_start_state = start_state",
+      "        if add_states:",
+      "            for s in add_states:",
+      "                if s in m:"
+    ],
+    "after_snippet": [
+      "        m = machines.FiniteMachine()",
+      "        if add_start:",
+      "            m.add_state(start_state)",
+      "            m.set_default_start_state(start_state)",
+      "        if add_states:",
+      "            for s in add_states:",
+      "                if s in m:"
+    ],
+    "strength": "strong",
+    "weak_markers": [],
+    "weak_category": null
+  }
+]

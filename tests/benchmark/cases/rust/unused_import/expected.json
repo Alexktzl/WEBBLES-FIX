@@ -1,0 +1,12 @@
+{
+  "description": "unused_import: HashMap imported but never used",
+  "language": "rust",
+  "category": "CLEANUP",
+  "primary_error": {
+    "code": "unused_import", "file": "src/main.rs", "line": 1,
+    "error_class": "CLEANUP",
+    "message": "unused import: `std::collections::HashMap`"
+  },
+  "acceptable_fixes": ["remove the use line"],
+  "constraints_test": {"expected_do_contains": "Remove the unused"}
+}

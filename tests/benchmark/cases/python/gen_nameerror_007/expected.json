@@ -1,0 +1,19 @@
+{
+  "description": "[generated] NameError: name 'resolvex' is not defined. Did you mean: 'resolve'?",
+  "language": "python",
+  "category": "BLOCKING",
+  "generated": true,
+  "primary_error": {
+    "code": "NameError",
+    "file": "main.py",
+    "line": 4,
+    "error_class": "STRUCTURAL",
+    "message": "name 'resolvex' is not defined. Did you mean: 'resolve'?"
+  },
+  "acceptable_fixes": [
+    "see after/ for the canonical fix"
+  ],
+  "symbol_graph_test": {
+    "must_find_definition_of": "resolve"
+  }
+}

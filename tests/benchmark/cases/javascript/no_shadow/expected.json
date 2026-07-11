@@ -1,0 +1,5 @@
+{ "description": "no-shadow: parameter value shadows outer const value",
+  "language": "javascript", "category": "WARNING",
+  "primary_error": {"code": "no-shadow", "file": "main.js", "line": 2,
+    "error_class": "WARNING", "message": "'value' is already declared in the upper scope"},
+  "acceptable_fixes": ["rename the inner parameter"] }

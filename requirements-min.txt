@@ -1,0 +1,9 @@
+# Минимальный набор для ЗАПУСКА Fix-агента (studio.py / run_agent.py).
+# Только чистый Python — без C-сборок, ставится даже на новых Python (3.13/3.14).
+# Не включает semgrep (тянет ruamel.yaml.clib и ломает сборку), telegram,
+# duckduckgo, hypothesis — они для опциональных функций/тестов, агенту не нужны.
+tomlkit>=0.12.0
+python-dotenv>=1.0.0
+openai>=1.0.0
+unidiff>=0.7.0
+eel

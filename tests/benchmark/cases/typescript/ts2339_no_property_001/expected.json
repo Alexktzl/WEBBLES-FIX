@@ -1,0 +1,12 @@
+{
+  "description": "Non-existent property foo on string",
+  "language": "typescript",
+  "category": "BLOCKING",
+  "primary_error": {
+    "code": "TS2339",
+    "file": "main.ts",
+    "line": 2,
+    "error_class": "BLOCKING",
+    "message": "Property 'foo' does not exist on type 'string'."
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "description": "E0004: non-exhaustive match, Color::Blue not covered",
+  "language": "rust", "category": "BLOCKING",
+  "primary_error": {"code": "E0004", "file": "src/main.rs", "line": 3,
+    "error_class": "STRUCTURAL",
+    "message": "non-exhaustive patterns: `Color::Blue` not covered"},
+  "acceptable_fixes": ["add the missing match arm"],
+  "symbol_graph_test": {"must_find_definition_of": "Color"}
+}

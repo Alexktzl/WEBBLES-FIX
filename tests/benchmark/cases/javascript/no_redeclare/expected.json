@@ -1,0 +1,7 @@
+{
+  "description": "no-redeclare: x is declared twice",
+  "language": "javascript", "category": "WARNING",
+  "primary_error": {"code": "no-redeclare", "file": "main.js", "line": 2,
+    "error_class": "WARNING", "message": "'x' is already defined"},
+  "acceptable_fixes": ["reassign instead of redeclaring"]
+}

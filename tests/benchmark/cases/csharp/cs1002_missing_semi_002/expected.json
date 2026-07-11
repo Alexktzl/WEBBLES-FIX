@@ -1,0 +1,12 @@
+{
+  "description": "Missing semicolon after method call",
+  "language": "csharp",
+  "category": "CRITICAL_SYNTAX",
+  "primary_error": {
+    "code": "CS1002",
+    "file": "Program.cs",
+    "line": 4,
+    "error_class": "CRITICAL_SYNTAX",
+    "message": "; expected"
+  }
+}

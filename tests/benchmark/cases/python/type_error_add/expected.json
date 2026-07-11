@@ -1,0 +1,11 @@
+{
+  "description": "TypeError: unsupported operand types int + str",
+  "language": "python",
+  "category": "BLOCKING",
+  "primary_error": {
+    "code": "TypeError", "file": "main.py", "line": 2,
+    "error_class": "STRUCTURAL",
+    "message": "unsupported operand type(s) for +: 'int' and 'str'"
+  },
+  "acceptable_fixes": ["cast a to str", "cast b to int"]
+}

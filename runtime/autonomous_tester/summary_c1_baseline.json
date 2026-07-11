@@ -1,0 +1,18 @@
+{
+  "series_n": 50,
+  "total_projects": 50,
+  "pass": 47,
+  "empty": 0,
+  "partial": 0,
+  "fail": 3,
+  "total_errors_found": 62236,
+  "total_accepted": 47,
+  "total_needs_review": 18,
+  "total_rejected": 53,
+  "consecutive_fail": 2,
+  "series_status": "completed",
+  "clones_deleted": 50,
+  "last_updated": "2026-06-12T22:05:02.584219",
+  "started_at": "2026-06-12T04:26:06.273624",
+  "effective_pass_rate": 0.94
+}

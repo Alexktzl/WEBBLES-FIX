@@ -1,0 +1,27 @@
+[
+  {
+    "file": ".github\\workflows\\release.yml",
+    "line": 50,
+    "code": "yaml.github-actions.security.run-shell-injection.run-shell-injection",
+    "message": "Using variable interpolation `${{...}}` with `github` context data in a `run:` step could allow an attacker to inject their own code into the runner. This would allow them to steal secrets and code. `",
+    "verdict": "REAL_FIX",
+    "unsafe_accept": false,
+    "semantic_suspicious_change": [],
+    "before_snippet": [
+      "        shell: bash",
+      "        env:",
+      "          GH_TOKEN: ${{ github.token }}",
+      "        run: gh release create ${{ github.ref_name }} --repo ${{ github.repository }} --generate-notes foremanctl-*.tar.gz"
+    ],
+    "after_snippet": [
+      "        shell: bash",
+      "        env:",
+      "          GH_TOKEN: ${{ github.token }}",
+      "          REF_NAME: ${{ github.ref_name }}",
+      "          REPO: ${{ github.repository }}",
+      "        run: gh release create \"$REF_NAME\" --repo \"$REPO\" --generate-notes foremanctl-*.tar.gz"
+    ],
+    "strength": "strong",
+    "weak_markers": []
+  }
+]

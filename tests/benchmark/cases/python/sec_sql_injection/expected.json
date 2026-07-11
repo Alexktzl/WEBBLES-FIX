@@ -1,0 +1,9 @@
+{
+  "description": "SQL query built via string concatenation",
+  "language": "python", "category": "SECURITY",
+  "primary_error": {"code": "sql_injection", "file": "main.py", "line": 2,
+    "error_class": "SECURITY", "message": "SQL query built via string concatenation"},
+  "acceptable_fixes": ["use a parameterized query with placeholders"],
+  "constraints_test": {"expected_do_contains": "parameterized",
+    "expected_dont_contains": "concatenate"}
+}

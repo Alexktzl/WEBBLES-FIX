@@ -1,0 +1,12 @@
+{
+  "description": "Missing inner closing brace",
+  "language": "go",
+  "category": "CRITICAL_SYNTAX",
+  "primary_error": {
+    "code": "GO_SYNTAX",
+    "file": "main.go",
+    "line": 5,
+    "error_class": "CRITICAL_SYNTAX",
+    "message": "expected }"
+  }
+}

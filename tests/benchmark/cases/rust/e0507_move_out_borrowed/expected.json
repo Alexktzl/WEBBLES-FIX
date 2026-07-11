@@ -1,0 +1,9 @@
+{
+  "description": "E0507: cannot move out of borrowed content h.data",
+  "language": "rust", "category": "BLOCKING",
+  "primary_error": {"code": "E0507", "file": "src/main.rs", "line": 3,
+    "error_class": "OWNERSHIP",
+    "message": "cannot move out of `h.data` which is behind a shared reference"},
+  "acceptable_fixes": ["use .clone()", "borrow the field"],
+  "constraints_test": {"expected_do_contains": "clone"}
+}

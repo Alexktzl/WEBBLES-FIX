@@ -1,0 +1,19 @@
+{
+  "description": "[generated] dead_code: function `validate` is never used",
+  "language": "rust",
+  "category": "CLEANUP",
+  "generated": true,
+  "primary_error": {
+    "code": "dead_code",
+    "file": "src/main.rs",
+    "line": 1,
+    "error_class": "CLEANUP",
+    "message": "function `validate` is never used"
+  },
+  "acceptable_fixes": [
+    "see after/ for the canonical fix"
+  ],
+  "constraints_test": {
+    "expected_dont_contains": "blanket-silence"
+  }
+}

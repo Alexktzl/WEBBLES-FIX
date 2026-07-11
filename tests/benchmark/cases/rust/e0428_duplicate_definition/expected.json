@@ -1,0 +1,6 @@
+{ "description": "E0428: the name greet is defined multiple times",
+  "language": "rust", "category": "BLOCKING",
+  "primary_error": {"code": "E0428", "file": "src/main.rs", "line": 2,
+    "error_class": "STRUCTURAL", "message": "the name `greet` is defined multiple times"},
+  "acceptable_fixes": ["remove the duplicate definition"],
+  "symbol_graph_test": {"must_find_definition_of": "greet"} }

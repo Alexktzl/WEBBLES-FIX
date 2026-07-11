@@ -1,0 +1,5 @@
+{ "description": "no-self-assign: x = x has no effect",
+  "language": "javascript", "category": "WARNING",
+  "primary_error": {"code": "no-self-assign", "file": "main.js", "line": 2,
+    "error_class": "WARNING", "message": "'x' is assigned to itself"},
+  "acceptable_fixes": ["remove the self-assignment"] }

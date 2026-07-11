@@ -1,0 +1,12 @@
+{
+  "description": "Missing semicolon after const",
+  "language": "typescript",
+  "category": "CRITICAL_SYNTAX",
+  "primary_error": {
+    "code": "TS1005",
+    "file": "main.ts",
+    "line": 1,
+    "error_class": "CRITICAL_SYNTAX",
+    "message": "';' expected."
+  }
+}

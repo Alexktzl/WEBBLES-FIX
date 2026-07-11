@@ -1,0 +1,5 @@
+{ "description": "no-new-wrappers: do not use new Number()",
+  "language": "javascript", "category": "WARNING",
+  "primary_error": {"code": "no-new-wrappers", "file": "main.js", "line": 1,
+    "error_class": "WARNING", "message": "Do not use Number as a constructor"},
+  "acceptable_fixes": ["call Number() without new"] }

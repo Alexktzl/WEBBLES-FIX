@@ -1,0 +1,5 @@
+{ "description": "no-trailing-spaces: trailing whitespace",
+  "language": "javascript", "category": "WARNING",
+  "primary_error": {"code": "no-trailing-spaces", "file": "main.js", "line": 1,
+    "error_class": "WARNING", "message": "Trailing spaces not allowed"},
+  "acceptable_fixes": ["strip trailing whitespace"] }

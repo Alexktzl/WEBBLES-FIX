@@ -1,0 +1,12 @@
+{
+  "description": "Unknown type Foobar",
+  "language": "java",
+  "category": "BLOCKING",
+  "primary_error": {
+    "code": "JAVAC_SYMBOL",
+    "file": "Main.java",
+    "line": 2,
+    "error_class": "BLOCKING",
+    "message": "cannot find symbol: class Foobar"
+  }
+}

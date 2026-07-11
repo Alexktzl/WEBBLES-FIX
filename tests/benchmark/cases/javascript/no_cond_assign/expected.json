@@ -1,0 +1,5 @@
+{ "description": "no-cond-assign: assignment in if condition (= vs ===)",
+  "language": "javascript", "category": "BLOCKING",
+  "primary_error": {"code": "no-cond-assign", "file": "main.js", "line": 2,
+    "error_class": "STRUCTURAL", "message": "Expected a conditional expression and instead saw an assignment"},
+  "acceptable_fixes": ["use === for comparison"] }

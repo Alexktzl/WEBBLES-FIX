@@ -1,0 +1,11 @@
+{
+  "description": "ESLint semi: missing semicolons after const declarations",
+  "language": "javascript",
+  "category": "CLEANUP",
+  "primary_error": {
+    "code": "semi", "file": "main.js", "line": 1,
+    "error_class": "CLEANUP",
+    "message": "Missing semicolon"
+  },
+  "acceptable_fixes": ["add ; after each statement"]
+}

@@ -1,0 +1,8 @@
+{
+  "description": "E0515: cannot return reference to local variable x",
+  "language": "rust", "category": "BLOCKING",
+  "primary_error": {"code": "E0515", "file": "src/main.rs", "line": 3,
+    "error_class": "OWNERSHIP",
+    "message": "cannot return reference to local variable `x`"},
+  "acceptable_fixes": ["return owned value instead of reference"]
+}

@@ -1,0 +1,9 @@
+{
+  "description": "Untrusted value assigned to innerHTML (XSS)",
+  "language": "javascript", "category": "SECURITY",
+  "primary_error": {"code": "xss", "file": "main.js", "line": 2,
+    "error_class": "SECURITY", "message": "untrusted value assigned to innerHTML"},
+  "acceptable_fixes": ["assign via textContent"],
+  "constraints_test": {"expected_do_contains": "textContent",
+    "expected_dont_contains": "innerHTML"}
+}

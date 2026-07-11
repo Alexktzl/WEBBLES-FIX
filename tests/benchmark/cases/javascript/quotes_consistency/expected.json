@@ -1,0 +1,5 @@
+{ "description": "quotes: single quotes where double expected",
+  "language": "javascript", "category": "WARNING",
+  "primary_error": {"code": "quotes", "file": "main.js", "line": 1,
+    "error_class": "WARNING", "message": "Strings must use doublequote"},
+  "acceptable_fixes": ["use double quotes"] }

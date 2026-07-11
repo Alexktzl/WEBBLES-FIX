@@ -1,0 +1,5 @@
+{ "description": "no-undef-init: redundant initialization to undefined",
+  "language": "javascript", "category": "WARNING",
+  "primary_error": {"code": "no-undef-init", "file": "main.js", "line": 1,
+    "error_class": "WARNING", "message": "It's not necessary to initialize 'value' to undefined"},
+  "acceptable_fixes": ["drop the = undefined"] }

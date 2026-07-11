@@ -1,0 +1,19 @@
+{
+  "description": "[generated] NameError: name 'serializex' is not defined. Did you mean: 'serialize'?",
+  "language": "python",
+  "category": "BLOCKING",
+  "generated": true,
+  "primary_error": {
+    "code": "NameError",
+    "file": "main.py",
+    "line": 4,
+    "error_class": "STRUCTURAL",
+    "message": "name 'serializex' is not defined. Did you mean: 'serialize'?"
+  },
+  "acceptable_fixes": [
+    "see after/ for the canonical fix"
+  ],
+  "symbol_graph_test": {
+    "must_find_definition_of": "serialize"
+  }
+}

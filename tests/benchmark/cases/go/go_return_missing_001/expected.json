@@ -1,0 +1,12 @@
+{
+  "description": "Function with int return type missing return",
+  "language": "go",
+  "category": "BLOCKING",
+  "primary_error": {
+    "code": "GO_RETURN",
+    "file": "main.go",
+    "line": 2,
+    "error_class": "BLOCKING",
+    "message": "missing return at end of function"
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "description": "Unused os import inside () block",
+  "language": "go",
+  "category": "CLEANUP",
+  "primary_error": {
+    "code": "GO_UNUSED_IMP",
+    "file": "main.go",
+    "line": 5,
+    "error_class": "CLEANUP",
+    "message": "imported and not used: \"os\""
+  }
+}

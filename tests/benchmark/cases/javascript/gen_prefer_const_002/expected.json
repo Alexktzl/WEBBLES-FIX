@@ -1,0 +1,16 @@
+{
+  "description": "[generated] prefer-const: 'result' is never reassigned. Use 'const' instead",
+  "language": "javascript",
+  "category": "WARNING",
+  "generated": true,
+  "primary_error": {
+    "code": "prefer-const",
+    "file": "main.js",
+    "line": 1,
+    "error_class": "WARNING",
+    "message": "'result' is never reassigned. Use 'const' instead"
+  },
+  "acceptable_fixes": [
+    "see after/ for the canonical fix"
+  ]
+}

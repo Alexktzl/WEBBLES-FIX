@@ -1,0 +1,12 @@
+{
+  "description": "E0599: no method named 'to_string_uppercase' on i32",
+  "language": "rust",
+  "category": "BLOCKING",
+  "primary_error": {
+    "code": "E0599", "file": "src/main.rs", "line": 3,
+    "error_class": "STRUCTURAL",
+    "message": "no method named `to_string_uppercase` found for type `i32` in the current scope"
+  },
+  "acceptable_fixes": ["use existing method to_string()"],
+  "constraints_test": {"expected_dont_contains": "unsafe"}
+}

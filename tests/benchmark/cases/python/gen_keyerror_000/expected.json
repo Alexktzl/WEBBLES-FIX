@@ -1,0 +1,16 @@
+{
+  "description": "[generated] KeyError: 'label'",
+  "language": "python",
+  "category": "BLOCKING",
+  "generated": true,
+  "primary_error": {
+    "code": "KeyError",
+    "file": "main.py",
+    "line": 2,
+    "error_class": "STRUCTURAL",
+    "message": "'label'"
+  },
+  "acceptable_fixes": [
+    "see after/ for the canonical fix"
+  ]
+}

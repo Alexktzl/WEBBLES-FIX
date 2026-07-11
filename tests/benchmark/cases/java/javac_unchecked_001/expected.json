@@ -1,0 +1,12 @@
+{
+  "description": "Raw type usage triggers unchecked warning",
+  "language": "java",
+  "category": "WARNING",
+  "primary_error": {
+    "code": "JAVAC_UNCHECKED",
+    "file": "Main.java",
+    "line": 6,
+    "error_class": "WARNING",
+    "message": "unchecked call to add(E) as a member of the raw type List [unchecked]"
+  }
+}

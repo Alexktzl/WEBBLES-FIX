@@ -1,0 +1,13 @@
+{
+  "description": "E0560: struct Config has no field 'debug' in literal",
+  "language": "rust",
+  "category": "BLOCKING",
+  "primary_error": {
+    "code": "E0560", "file": "src/main.rs", "line": 4,
+    "error_class": "STRUCTURAL",
+    "message": "struct `Config` has no field named `debug`"
+  },
+  "acceptable_fixes": ["remove the unknown field from the literal"],
+  "constraints_test": {"expected_dont_contains": "add the unknown field"},
+  "symbol_graph_test": {"must_find_definition_of": "Config"}
+}

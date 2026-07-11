@@ -1,0 +1,11 @@
+{
+  "description": "ReferenceError: consle (typo for console)",
+  "language": "javascript",
+  "category": "BLOCKING",
+  "primary_error": {
+    "code": "ReferenceError", "file": "main.js", "line": 2,
+    "error_class": "STRUCTURAL",
+    "message": "consle is not defined"
+  },
+  "acceptable_fixes": ["fix typo consle → console"]
+}

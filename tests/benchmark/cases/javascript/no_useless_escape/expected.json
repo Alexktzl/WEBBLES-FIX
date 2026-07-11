@@ -1,0 +1,5 @@
+{ "description": "no-useless-escape: unnecessary escape of /",
+  "language": "javascript", "category": "WARNING",
+  "primary_error": {"code": "no-useless-escape", "file": "main.js", "line": 1,
+    "error_class": "WARNING", "message": "Unnecessary escape character: \\/"},
+  "acceptable_fixes": ["remove the unnecessary backslash"] }
